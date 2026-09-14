@@ -963,25 +963,13 @@
     </div>
   </footer>
 
-  <!-- Consultation Modal in Clean White Styling -->
-  <div id="consultation-modal" class="fixed inset-0 z-50 hidden bg-slate-900/40 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto">
-    <div class="bg-white rounded-2xl max-w-lg w-full shadow-2xl border border-slate-200 overflow-hidden relative my-8">
-      
-      <!-- Modal Header -->
-      <div class="bg-slate-50 border-b border-slate-200 p-6 relative">
-        <button onclick="closeConsultationModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 p-2 text-lg">
-          <i class="fa-solid fa-xmark"></i>
-        </button>
-        <div class="flex items-center gap-2 mb-1">
-          <span class="bg-brandRed text-[10px] font-extrabold px-2.5 py-0.5 rounded-full uppercase tracking-wider text-white">100% Bebas Biaya</span>
-        </div>
-  <!-- Consultation Modal in Clean White Styling: Max height and smooth scrolling on mobile -->
-  <div id="consultation-modal" class="fixed inset-0 z-50 hidden bg-slate-900/50 backdrop-blur-sm flex items-center justify-center p-3 sm:p-4 overflow-y-auto">
-    <div class="bg-white rounded-2xl max-w-lg w-full shadow-2xl border border-slate-200 overflow-hidden relative my-6 max-h-[92vh] flex flex-col">
+  <!-- Consultation Modal in Clean White Styling: Max height, responsive and backdrop click to close -->
+  <div id="consultation-modal" onclick="handleBackdropClick(event)" class="fixed inset-0 z-50 hidden bg-slate-900/60 backdrop-blur-sm items-center justify-center p-3 sm:p-4 overflow-y-auto">
+    <div onclick="event.stopPropagation()" class="bg-white rounded-2xl max-w-lg w-full shadow-2xl border border-slate-200 overflow-hidden relative my-6 max-h-[92vh] flex flex-col transform transition-all">
       
       <!-- Modal Header -->
       <div class="bg-slate-50 border-b border-slate-200 p-4 sm:p-6 relative flex-shrink-0">
-        <button onclick="closeConsultationModal()" class="absolute top-3.5 right-3.5 text-slate-400 hover:text-slate-700 p-2 text-lg min-w-[36px] min-h-[36px] flex items-center justify-center rounded-lg hover:bg-slate-100" aria-label="Tutup modal">
+        <button type="button" onclick="closeConsultationModal()" class="absolute top-3.5 right-3.5 text-slate-400 hover:text-slate-700 p-2 text-lg min-w-[36px] min-h-[36px] flex items-center justify-center rounded-lg hover:bg-slate-100 transition" aria-label="Tutup modal">
           <i class="fa-solid fa-xmark"></i>
         </button>
         <div class="flex items-center gap-2 mb-1">
@@ -1640,12 +1628,31 @@
 
     // Modal Operations
     function openConsultationModal() {
-      document.getElementById('consultation-modal').classList.remove('hidden');
+      const modal = document.getElementById('consultation-modal');
+      if (modal) {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        document.body.classList.add('overflow-hidden');
+      }
     }
 
     function closeConsultationModal() {
-      document.getElementById('consultation-modal').classList.add('hidden');
-      document.getElementById('modal-alert-box').classList.add('hidden');
+      const modal = document.getElementById('consultation-modal');
+      if (modal) {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+        document.body.classList.remove('overflow-hidden');
+      }
+      const alertBox = document.getElementById('modal-alert-box');
+      if (alertBox) {
+        alertBox.classList.add('hidden');
+      }
+    }
+
+    function handleBackdropClick(event) {
+      if (event.target.id === 'consultation-modal') {
+        closeConsultationModal();
+      }
     }
 
     // Update phone placeholder based on chosen country in modal
