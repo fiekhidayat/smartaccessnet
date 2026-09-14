@@ -94,24 +94,28 @@
       color: #dc2626;
       border: 1px solid #fecaca;
     }
+    /* Hide scrollbar for clean horizontal scrolling on mobile tabs */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
   </style>
 </head>
-<body class="bg-white text-slate-800 font-sans antialiased selection:bg-brandBlue selection:text-white">
+<body class="bg-white text-slate-800 font-sans antialiased selection:bg-brandBlue selection:text-white overflow-x-hidden">
 
-  <!-- Top Mini Notice Bar in Crisp Light Slate & Blue -->
-  <div class="bg-slate-50 text-slate-600 text-xs py-2 px-4 border-b border-slate-200">
-    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
-      <div class="flex items-center gap-2">
-        <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-brandRed text-white tracking-wide uppercase shadow-sm" id="intake-badge">Intake 2026 / 2027</span>
-        <span id="intake-text" class="text-slate-700 font-medium">Pendaftaran Intake Semester Australia Kini Telah Dibuka!</span>
-      </div>
-      <div class="flex items-center gap-4 text-xs font-medium">
-        <a href="#offices" class="hover:text-brandBlue flex items-center gap-1.5 transition-colors text-slate-600">
+  <!-- Top Mini Notice Bar: Cleaned and fully responsive -->
+  <div class="bg-slate-50 text-slate-600 text-xs py-2 px-3 sm:px-4 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between sm:justify-end items-center gap-3">
+      <div class="flex items-center gap-4 text-xs font-medium w-full sm:w-auto justify-between sm:justify-end">
+        <a href="#offices" class="hover:text-brandBlue flex items-center gap-1.5 transition-colors text-slate-600 py-0.5">
           <i class="fa-solid fa-earth-asia text-brandBlue"></i>
           <span id="top-offices-btn">5 Kantor Perwakilan Global</span>
         </a>
         <span class="text-slate-300">|</span>
-        <a href="mailto:info@thesmartaccess.net" class="hover:text-brandRed flex items-center gap-1.5 transition-colors text-slate-600">
+        <a href="mailto:info@thesmartaccess.net" class="hover:text-brandRed flex items-center gap-1.5 transition-colors text-slate-600 py-0.5">
           <i class="fa-solid fa-envelope text-brandRed"></i>
           <span>info@thesmartaccess.net</span>
         </a>
@@ -119,14 +123,14 @@
     </div>
   </div>
 
-  <!-- Primary Sticky Header: Pure White with Soft Shadow -->
+  <!-- Primary Sticky Header: Adaptive sizing and fluid spacing -->
   <header class="sticky top-0 z-50 glass-nav-light border-b border-slate-200 shadow-sm transition-all duration-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-20">
+      <div class="flex items-center justify-between h-16 sm:h-20">
         
         <!-- Brand Logo matching official Smart Access design -->
-        <a href="#" class="flex items-center gap-3.5 group">
-          <div class="relative w-12 h-12 flex-shrink-0 transition-transform group-hover:scale-105 duration-200">
+        <a href="#" class="flex items-center gap-2.5 sm:gap-3.5 group flex-shrink-0">
+          <div class="relative w-10 h-10 sm:w-12 sm:h-12 flex-shrink-0 transition-transform group-hover:scale-105 duration-200">
             <svg viewBox="0 0 160 160" class="w-full h-full drop-shadow">
               <defs>
                 <linearGradient id="logoBlue" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -150,16 +154,16 @@
             </svg>
           </div>
           <div class="flex flex-col">
-            <div class="flex items-baseline gap-1.5">
-              <span class="text-2xl font-black tracking-wider text-blue-600">SMART</span>
-              <span class="text-2xl font-black tracking-wider text-red-600 font-serif">ACCESS</span>
+            <div class="flex items-baseline gap-1 sm:gap-1.5">
+              <span class="text-xl sm:text-2xl font-black tracking-wider text-blue-600">SMART</span>
+              <span class="text-xl sm:text-2xl font-black tracking-wider text-red-600 font-serif">ACCESS</span>
             </div>
-            <span class="text-[9px] font-bold uppercase tracking-[0.24em] text-slate-500 -mt-1">Internasional</span>
+            <span class="text-[8px] sm:text-[9px] font-bold uppercase tracking-[0.2em] sm:tracking-[0.24em] text-slate-500 -mt-1">Internasional</span>
           </div>
         </a>
 
         <!-- Desktop Navigation Links in Clean Slate -->
-        <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-700">
+        <nav class="hidden lg:flex items-center gap-5 xl:gap-7 text-sm font-semibold text-slate-700">
           <a href="#why-australia" class="hover:text-brandBlue transition-colors py-1" id="nav-why">Kenapa Australia?</a>
           <a href="#pathway" class="hover:text-brandBlue transition-colors py-1" id="nav-pathway">Jalur S1 Lulusan SMA</a>
           <a href="#advantages" class="hover:text-brandBlue transition-colors py-1" id="nav-advantages">Keunggulan & Karir</a>
@@ -167,46 +171,46 @@
           <a href="#faq" class="hover:text-brandBlue transition-colors py-1" id="nav-faq">FAQ</a>
         </nav>
 
-        <!-- Right Side: Language Switcher & Consultation CTA -->
-        <div class="flex items-center gap-3">
+        <!-- Right Side: Language Switcher & Consultation CTA with responsive sizing -->
+        <div class="flex items-center gap-2 sm:gap-3">
           
           <!-- Language Dropdown Switcher -->
           <div class="relative" id="lang-menu-wrapper">
-            <button id="lang-dropdown-btn" onclick="toggleLangDropdown()" class="flex items-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-semibold px-3 py-2 rounded-lg border border-slate-300 transition">
+            <button id="lang-dropdown-btn" onclick="toggleLangDropdown()" class="flex items-center gap-1.5 sm:gap-2 bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-semibold px-2.5 sm:px-3 py-2 rounded-lg border border-slate-300 transition min-h-[40px]">
               <span id="current-lang-flag">🇮🇩</span>
-              <span id="current-lang-text">Indonesia</span>
+              <span id="current-lang-text" class="hidden xs:inline">Indonesia</span>
               <i class="fa-solid fa-chevron-down text-[10px] text-slate-500 transition-transform duration-200" id="lang-arrow"></i>
             </button>
 
             <!-- Dropdown Menu -->
             <div id="lang-dropdown" class="hidden absolute right-0 mt-2 w-52 bg-white border border-slate-200 rounded-xl shadow-xl py-2 z-50 text-xs">
               <div class="px-3 py-1.5 text-[10px] uppercase font-bold text-slate-400 tracking-wider border-b border-slate-100">Pilih Bahasa / Language</div>
-              <button onclick="setLanguage('id')" class="w-full flex items-center gap-2.5 px-3 py-2 hover:bg-blue-50 text-left text-slate-700 hover:text-brandBlue transition">
+              <button onclick="setLanguage('id')" class="w-full flex items-center gap-2.5 px-3 py-2.5 hover:bg-blue-50 text-left text-slate-700 hover:text-brandBlue transition">
                 <span>🇮🇩</span> <span class="font-semibold">Bahasa Indonesia</span>
               </button>
-              <button onclick="setLanguage('en')" class="w-full flex items-center gap-2.5 px-3 py-2 hover:bg-blue-50 text-left text-slate-700 hover:text-brandBlue transition">
+              <button onclick="setLanguage('en')" class="w-full flex items-center gap-2.5 px-3 py-2.5 hover:bg-blue-50 text-left text-slate-700 hover:text-brandBlue transition">
                 <span>🇬🇧</span> <span class="font-semibold">English (International)</span>
               </button>
-              <button onclick="setLanguage('tl')" class="w-full flex items-center gap-2.5 px-3 py-2 hover:bg-blue-50 text-left text-slate-700 hover:text-brandBlue transition">
+              <button onclick="setLanguage('tl')" class="w-full flex items-center gap-2.5 px-3 py-2.5 hover:bg-blue-50 text-left text-slate-700 hover:text-brandBlue transition">
                 <span>🇵🇭</span> <span class="font-semibold">Filipino (Tagalog)</span>
               </button>
-              <button onclick="setLanguage('ne')" class="w-full flex items-center gap-2.5 px-3 py-2 hover:bg-blue-50 text-left text-slate-700 hover:text-brandBlue transition">
+              <button onclick="setLanguage('ne')" class="w-full flex items-center gap-2.5 px-3 py-2.5 hover:bg-blue-50 text-left text-slate-700 hover:text-brandBlue transition">
                 <span>🇳🇵</span> <span class="font-semibold font-nepali">नेपाली (Nepal)</span>
               </button>
-              <button onclick="setLanguage('ur')" class="w-full flex items-center gap-2.5 px-3 py-2 hover:bg-blue-50 text-left text-slate-700 hover:text-brandBlue transition">
+              <button onclick="setLanguage('ur')" class="w-full flex items-center gap-2.5 px-3 py-2.5 hover:bg-blue-50 text-left text-slate-700 hover:text-brandBlue transition">
                 <span>🇵🇰</span> <span class="font-semibold font-urdu">اردو (Pakistan)</span>
               </button>
             </div>
           </div>
 
           <!-- Main CTA Button (Crimson Red) -->
-          <button onclick="openConsultationModal()" class="hidden sm:inline-flex items-center gap-2 btn-red-action text-white text-xs md:text-sm font-bold px-4 py-2.5 rounded-lg transition" id="header-cta-btn">
+          <button onclick="openConsultationModal()" class="hidden sm:inline-flex items-center gap-2 btn-red-action text-white text-xs md:text-sm font-bold px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-lg transition min-h-[40px]" id="header-cta-btn">
             <i class="fa-solid fa-headset"></i>
             <span>Konsultasi Gratis!</span>
           </button>
 
-          <!-- Mobile Hamburger Toggle -->
-          <button onclick="toggleMobileMenu()" class="lg:hidden text-slate-600 hover:text-slate-900 p-2 rounded-md hover:bg-slate-100">
+          <!-- Mobile Hamburger Toggle with large tap target -->
+          <button onclick="toggleMobileMenu()" class="lg:hidden text-slate-600 hover:text-slate-900 p-2.5 rounded-lg hover:bg-slate-100 min-h-[40px] min-w-[40px] flex items-center justify-center" aria-label="Buka Menu">
             <i class="fa-solid fa-bars text-xl" id="menu-icon"></i>
           </button>
         </div>
@@ -214,29 +218,29 @@
       </div>
     </div>
 
-    <!-- Mobile Drawer Menu in White -->
-    <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-200 px-6 py-4 space-y-3 shadow-lg">
-      <a href="#why-australia" onclick="toggleMobileMenu()" class="block text-slate-700 hover:text-brandBlue font-medium py-1" id="m-nav-why">Kenapa Australia?</a>
-      <a href="#pathway" onclick="toggleMobileMenu()" class="block text-slate-700 hover:text-brandBlue font-medium py-1" id="m-nav-pathway">Jalur S1 Lulusan SMA</a>
-      <a href="#advantages" onclick="toggleMobileMenu()" class="block text-slate-700 hover:text-brandBlue font-medium py-1" id="m-nav-advantages">Keuntungan Karier Global</a>
-      <a href="#offices" onclick="toggleMobileMenu()" class="block text-slate-700 hover:text-brandBlue font-medium py-1" id="m-nav-offices">Kontak & Kantor Negara</a>
-      <a href="#faq" onclick="toggleMobileMenu()" class="block text-slate-700 hover:text-brandBlue font-medium py-1" id="m-nav-faq">Tanya Jawab (FAQ)</a>
+    <!-- Mobile Drawer Menu in White with Smooth Backdrop -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-200 px-5 sm:px-6 py-4 space-y-3 shadow-xl transition-all duration-200">
+      <a href="#why-australia" onclick="toggleMobileMenu()" class="block text-slate-700 hover:text-brandBlue font-semibold py-2 px-2 rounded-lg hover:bg-slate-50 transition" id="m-nav-why">Kenapa Australia?</a>
+      <a href="#pathway" onclick="toggleMobileMenu()" class="block text-slate-700 hover:text-brandBlue font-semibold py-2 px-2 rounded-lg hover:bg-slate-50 transition" id="m-nav-pathway">Jalur S1 Lulusan SMA</a>
+      <a href="#advantages" onclick="toggleMobileMenu()" class="block text-slate-700 hover:text-brandBlue font-semibold py-2 px-2 rounded-lg hover:bg-slate-50 transition" id="m-nav-advantages">Keuntungan Karier Global</a>
+      <a href="#offices" onclick="toggleMobileMenu()" class="block text-slate-700 hover:text-brandBlue font-semibold py-2 px-2 rounded-lg hover:bg-slate-50 transition" id="m-nav-offices">Kontak & Kantor Negara</a>
+      <a href="#faq" onclick="toggleMobileMenu()" class="block text-slate-700 hover:text-brandBlue font-semibold py-2 px-2 rounded-lg hover:bg-slate-50 transition" id="m-nav-faq">Tanya Jawab (FAQ)</a>
       <div class="pt-2">
-        <button onclick="openConsultationModal(); toggleMobileMenu();" class="w-full flex items-center justify-center gap-2 btn-red-action text-white font-bold py-3 rounded-lg shadow" id="m-cta-btn">
-          <i class="fa-solid fa-comments"></i>
+        <button onclick="openConsultationModal(); toggleMobileMenu();" class="w-full flex items-center justify-center gap-2 btn-red-action text-white font-bold py-3.5 rounded-xl shadow-md min-h-[48px]" id="m-cta-btn">
+          <i class="fa-solid fa-comments text-base"></i>
           <span>Konsultasi Gratis Sekarang!</span>
         </button>
       </div>
     </div>
   </header>
 
-  <!-- Hero Section: Clean White with Subtle Blue-Red Accents -->
-  <section class="hero-light-gradient text-slate-900 relative overflow-hidden py-16 lg:py-24 border-b border-slate-200">
+  <!-- Hero Section: Clean White with Adaptive Typography and Spacing -->
+  <section class="hero-light-gradient text-slate-900 relative overflow-hidden py-10 sm:py-16 lg:py-24 border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
         
         <!-- Hero Text Column -->
-        <div class="lg:col-span-7 space-y-6">
+        <div class="lg:col-span-7 space-y-5 sm:space-y-6 text-center lg:text-left">
           <div class="inline-flex items-center gap-2.5 badge-subtle-blue px-3.5 py-1.5 rounded-full text-xs font-bold shadow-sm">
             <span class="flex h-2 w-2 relative">
               <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-500 opacity-75"></span>
@@ -245,51 +249,51 @@
             <span id="hero-badge">Solusi Layanan Cepat Kuliah di Australia</span>
           </div>
 
-          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-tight text-slate-950" id="hero-title">
+          <h1 class="text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-tight text-slate-950" id="hero-title">
             Lulusan SMA bisa langsung mulai kuliah <span class="text-brandBlue font-extrabold">S1 (Bachelor)</span> di Australia.
           </h1>
 
-          <p class="text-base sm:text-lg text-slate-600 font-normal leading-relaxed" id="hero-subtitle">
+          <p class="text-sm sm:text-base lg:text-lg text-slate-600 font-normal leading-relaxed max-w-2xl mx-auto lg:mx-0" id="hero-subtitle">
             Tanpa ribet, dengan pendampingan penuh dari <strong class="text-black font-extrabold">Smart Access Internasional</strong>. Kami mengurus verifikasi dokumen, pendaftaran universitas, visa pelajar, hingga akomodasi di Australia.
           </p>
 
-          <!-- Quick Value Badges in Clean White/Border style -->
-          <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-xs">
-            <div class="flex items-center gap-2 bg-white border border-slate-200 p-3 rounded-xl shadow-sm">
+          <!-- Quick Value Badges in Adaptive grid -->
+          <div class="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 gap-2.5 sm:gap-3 pt-1 text-xs">
+            <div class="flex items-center justify-center lg:justify-start gap-2 bg-white border border-slate-200 p-3 rounded-xl shadow-sm">
               <i class="fa-solid fa-graduation-cap text-brandBlue text-base"></i>
               <span id="quick-badge-1" class="font-bold text-slate-800">Direct Entry S1</span>
             </div>
-            <div class="flex items-center gap-2 bg-white border border-slate-200 p-3 rounded-xl shadow-sm">
+            <div class="flex items-center justify-center lg:justify-start gap-2 bg-white border border-slate-200 p-3 rounded-xl shadow-sm">
               <i class="fa-solid fa-passport text-brandRed text-base"></i>
               <span id="quick-badge-2" class="font-bold text-slate-800">Garansi Layanan Visa</span>
             </div>
-            <div class="flex items-center gap-2 bg-white border border-slate-200 p-3 rounded-xl shadow-sm col-span-2 sm:col-span-1">
+            <div class="flex items-center justify-center lg:justify-start gap-2 bg-white border border-slate-200 p-3 rounded-xl shadow-sm xs:col-span-2 sm:col-span-1">
               <i class="fa-solid fa-briefcase text-emerald-600 text-base"></i>
               <span id="quick-badge-3" class="font-bold text-slate-800">Izin Kerja Resmi</span>
             </div>
           </div>
 
-          <!-- Hero Action Buttons -->
-          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-3">
-            <button onclick="openConsultationModal()" class="inline-flex justify-center items-center gap-3 btn-red-action text-white font-extrabold px-8 py-4 rounded-xl text-base shadow-lg" id="hero-cta-main">
-              <i class="fa-brands fa-whatsapp text-xl"></i>
+          <!-- Hero Action Buttons with adaptive full width on mobile -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-center lg:justify-start gap-3 sm:gap-4 pt-2">
+            <button onclick="openConsultationModal()" class="inline-flex justify-center items-center gap-3 btn-red-action text-white font-extrabold px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl text-sm sm:text-base shadow-lg min-h-[48px]" id="hero-cta-main">
+              <i class="fa-brands fa-whatsapp text-lg sm:text-xl"></i>
               <span>Konsultasi Gratis Sekarang!</span>
             </button>
-            <a href="#why-australia" class="inline-flex justify-center items-center gap-2 bg-white hover:bg-slate-50 border-2 border-slate-200 hover:border-brandBlue text-slate-700 hover:text-brandBlue font-bold px-6 py-4 rounded-xl text-sm transition shadow-sm" id="hero-cta-secondary">
+            <a href="#why-australia" class="inline-flex justify-center items-center gap-2 bg-white hover:bg-slate-50 border-2 border-slate-200 hover:border-brandBlue text-slate-700 hover:text-brandBlue font-bold px-5 sm:px-6 py-3.5 sm:py-4 rounded-xl text-xs sm:text-sm transition shadow-sm min-h-[48px]" id="hero-cta-secondary">
               <i class="fa-solid fa-compass text-brandBlue"></i>
               <span>Pelajari Keuntungan</span>
             </a>
           </div>
 
           <!-- Student Trust Quote in Light Style -->
-          <div class="flex items-center gap-4 pt-4 border-t border-slate-200 text-xs text-slate-500">
-            <div class="flex -space-x-2">
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4 pt-4 border-t border-slate-200 text-xs text-slate-500">
+            <div class="flex -space-x-2 flex-shrink-0">
               <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white object-cover" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80" alt="Student" onerror="this.src='https://placehold.co/100x100/0284c7/ffffff?text=User'">
               <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white object-cover" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&auto=format&fit=crop&q=80" alt="Student" onerror="this.src='https://placehold.co/100x100/dc2626/ffffff?text=User'">
               <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white object-cover" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=100&auto=format&fit=crop&q=80" alt="Student" onerror="this.src='https://placehold.co/100x100/0369a1/ffffff?text=User'">
               <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white object-cover" src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=100&auto=format&fit=crop&q=80" alt="Student" onerror="this.src='https://placehold.co/100x100/e62429/ffffff?text=User'">
             </div>
-            <div>
+            <div class="text-center sm:text-left">
               <p class="text-slate-900 font-bold" id="hero-trust-title">Mendukung Pelajar dari 5 Negara</p>
               <p id="hero-trust-desc">Indonesia, Philippines, Nepal, Pakistan & Australia Network</p>
             </div>
@@ -297,42 +301,42 @@
         </div>
 
         <!-- Hero Fast-Track Card: Crisp White with Red and Blue Highlights -->
-        <div class="lg:col-span-5">
-          <div class="relative bg-white p-7 rounded-2xl border-2 border-slate-200/90 shadow-xl shadow-slate-200/50 space-y-5">
+        <div class="lg:col-span-5 w-full max-w-md mx-auto lg:max-w-none">
+          <div class="relative bg-white p-5 sm:p-7 rounded-2xl border-2 border-slate-200/90 shadow-xl shadow-slate-200/50 space-y-4 sm:space-y-5">
             
-            <div class="flex items-center justify-between pb-4 border-b border-slate-100">
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl bg-blue-50 text-brandBlue flex items-center justify-center font-bold text-lg border border-blue-100">
+            <div class="flex items-center justify-between pb-3 sm:pb-4 border-b border-slate-100">
+              <div class="flex items-center gap-2.5 sm:gap-3">
+                <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-blue-50 text-brandBlue flex items-center justify-center font-bold text-base sm:text-lg border border-blue-100 flex-shrink-0">
                   <i class="fa-solid fa-paper-plane"></i>
                 </div>
                 <div>
-                  <h3 class="font-extrabold text-sm sm:text-base text-slate-900" id="card-check-title">Kalkulator Jalur Cepat S1</h3>
-                  <p class="text-[11px] text-slate-500 font-medium" id="card-check-subtitle">Cek kelayakan kuliah ke Australia</p>
+                  <h3 class="font-extrabold text-xs sm:text-base text-slate-900" id="card-check-title">Kalkulator Jalur Cepat S1</h3>
+                  <p class="text-[10px] sm:text-[11px] text-slate-500 font-medium" id="card-check-subtitle">Cek kelayakan kuliah ke Australia</p>
                 </div>
               </div>
-              <span class="text-[10px] font-extrabold bg-emerald-50 text-emerald-700 px-2.5 py-1 rounded-full border border-emerald-200">Lulusan SMA OK</span>
+              <span class="text-[9px] sm:text-[10px] font-extrabold bg-emerald-50 text-emerald-700 px-2 sm:px-2.5 py-1 rounded-full border border-emerald-200">Lulusan SMA OK</span>
             </div>
 
             <!-- Pathway Stepper Summary in Clean Card format -->
-            <div class="space-y-3 text-xs">
-              <div class="flex items-start gap-3 p-3 rounded-xl bg-slate-50/80 border border-slate-200/80">
-                <div class="w-6 h-6 rounded-full bg-brandBlue text-white font-extrabold flex items-center justify-center flex-shrink-0 text-xs">1</div>
+            <div class="space-y-2.5 sm:space-y-3 text-xs">
+              <div class="flex items-start gap-2.5 sm:gap-3 p-2.5 sm:p-3 rounded-xl bg-slate-50/80 border border-slate-200/80">
+                <div class="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-brandBlue text-white font-extrabold flex items-center justify-center flex-shrink-0 text-[11px] sm:text-xs">1</div>
                 <div>
-                  <span class="font-bold text-slate-900 block" id="card-step-1-title">Lulusan SMA / K-12 / +2 / Intermediate</span>
+                  <span class="font-bold text-slate-900 block text-xs" id="card-step-1-title">Lulusan SMA / K-12 / +2 / Intermediate</span>
                   <span class="text-slate-600 text-[11px] leading-relaxed" id="card-step-1-desc">Ijazah sekolah menengah diakui langsung untuk intake S1 Bachelor.</span>
                 </div>
               </div>
-              <div class="flex items-start gap-3 p-3 rounded-xl bg-slate-50/80 border border-slate-200/80">
-                <div class="w-6 h-6 rounded-full bg-brandRed text-white font-extrabold flex items-center justify-center flex-shrink-0 text-xs">2</div>
+              <div class="flex items-start gap-2.5 sm:gap-3 p-2.5 sm:p-3 rounded-xl bg-slate-50/80 border border-slate-200/80">
+                <div class="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-brandRed text-white font-extrabold flex items-center justify-center flex-shrink-0 text-[11px] sm:text-xs">2</div>
                 <div>
-                  <span class="font-bold text-slate-900 block" id="card-step-2-title">Proses Kilat Letter of Offer (CoE)</span>
+                  <span class="font-bold text-slate-900 block text-xs" id="card-step-2-title">Proses Kilat Letter of Offer (CoE)</span>
                   <span class="text-slate-600 text-[11px] leading-relaxed" id="card-step-2-desc">Bantuan pemilihan jurusan & beasiswa potongan biaya studi.</span>
                 </div>
               </div>
-              <div class="flex items-start gap-3 p-3 rounded-xl bg-slate-50/80 border border-slate-200/80">
-                <div class="w-6 h-6 rounded-full bg-emerald-600 text-white font-extrabold flex items-center justify-center flex-shrink-0 text-xs">3</div>
+              <div class="flex items-start gap-2.5 sm:gap-3 p-2.5 sm:p-3 rounded-xl bg-slate-50/80 border border-slate-200/80">
+                <div class="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-emerald-600 text-white font-extrabold flex items-center justify-center flex-shrink-0 text-[11px] sm:text-xs">3</div>
                 <div>
-                  <span class="font-bold text-slate-900 block" id="card-step-3-title">Student Visa Subclass 500</span>
+                  <span class="font-bold text-slate-900 block text-xs" id="card-step-3-title">Student Visa Subclass 500</span>
                   <span class="text-slate-600 text-[11px] leading-relaxed" id="card-step-3-desc">Izin resmi kuliah + kerja sambilan 48 jam per dua minggu.</span>
                 </div>
               </div>
@@ -342,22 +346,22 @@
             <div class="pt-1">
               <label class="block text-xs font-bold text-slate-700 mb-2" id="label-choose-country">Pilih Asal Negara Kamu:</label>
               <div class="grid grid-cols-2 gap-2">
-                <button type="button" onclick="selectOriginCountry('Indonesia')" class="origin-btn bg-white hover:bg-blue-50 border border-slate-200 hover:border-brandBlue text-slate-800 text-xs font-bold py-2.5 px-3 rounded-xl flex items-center gap-2 transition shadow-sm" data-country="Indonesia">
+                <button type="button" onclick="selectOriginCountry('Indonesia')" class="origin-btn bg-white hover:bg-blue-50 border border-slate-200 hover:border-brandBlue text-slate-800 text-xs font-bold py-2.5 px-2.5 sm:px-3 rounded-xl flex items-center gap-1.5 sm:gap-2 transition shadow-sm min-h-[42px]" data-country="Indonesia">
                   <span>🇮🇩</span> <span>Indonesia</span>
                 </button>
-                <button type="button" onclick="selectOriginCountry('Philippines')" class="origin-btn bg-white hover:bg-blue-50 border border-slate-200 hover:border-brandBlue text-slate-800 text-xs font-bold py-2.5 px-3 rounded-xl flex items-center gap-2 transition shadow-sm" data-country="Philippines">
+                <button type="button" onclick="selectOriginCountry('Philippines')" class="origin-btn bg-white hover:bg-blue-50 border border-slate-200 hover:border-brandBlue text-slate-800 text-xs font-bold py-2.5 px-2.5 sm:px-3 rounded-xl flex items-center gap-1.5 sm:gap-2 transition shadow-sm min-h-[42px]" data-country="Philippines">
                   <span>🇵🇭</span> <span>Philippines</span>
                 </button>
-                <button type="button" onclick="selectOriginCountry('Nepal')" class="origin-btn bg-white hover:bg-blue-50 border border-slate-200 hover:border-brandBlue text-slate-800 text-xs font-bold py-2.5 px-3 rounded-xl flex items-center gap-2 transition shadow-sm" data-country="Nepal">
+                <button type="button" onclick="selectOriginCountry('Nepal')" class="origin-btn bg-white hover:bg-blue-50 border border-slate-200 hover:border-brandBlue text-slate-800 text-xs font-bold py-2.5 px-2.5 sm:px-3 rounded-xl flex items-center gap-1.5 sm:gap-2 transition shadow-sm min-h-[42px]" data-country="Nepal">
                   <span>🇳🇵</span> <span>Nepal</span>
                 </button>
-                <button type="button" onclick="selectOriginCountry('Pakistan')" class="origin-btn bg-white hover:bg-blue-50 border border-slate-200 hover:border-brandBlue text-slate-800 text-xs font-bold py-2.5 px-3 rounded-xl flex items-center gap-2 transition shadow-sm" data-country="Pakistan">
+                <button type="button" onclick="selectOriginCountry('Pakistan')" class="origin-btn bg-white hover:bg-blue-50 border border-slate-200 hover:border-brandBlue text-slate-800 text-xs font-bold py-2.5 px-2.5 sm:px-3 rounded-xl flex items-center gap-1.5 sm:gap-2 transition shadow-sm min-h-[42px]" data-country="Pakistan">
                   <span>🇵🇰</span> <span>Pakistan</span>
                 </button>
               </div>
             </div>
 
-            <button onclick="openConsultationModal()" class="w-full btn-blue-action text-white font-extrabold py-3.5 rounded-xl text-xs sm:text-sm transition flex items-center justify-center gap-2 shadow-md" id="card-consult-action">
+            <button onclick="openConsultationModal()" class="w-full btn-blue-action text-white font-extrabold py-3.5 rounded-xl text-xs sm:text-sm transition flex items-center justify-center gap-2 shadow-md min-h-[46px]" id="card-consult-action">
               <i class="fa-solid fa-calendar-check"></i>
               <span id="btn-card-check">Mulai Evaluasi Berkas Gratis</span>
             </button>
@@ -502,34 +506,34 @@
   </section>
 
   <!-- Global Offices Directory: Crisp White Cards with Red & Blue Contact Actions -->
-  <section id="offices" class="py-20 bg-slate-50/70 border-b border-slate-200">
+  <section id="offices" class="py-14 sm:py-20 bg-slate-50/70 border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
+      <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-12 space-y-3">
         <span class="inline-block badge-subtle-red text-[11px] font-extrabold uppercase tracking-widest px-3 py-1 rounded-full" id="offices-subhead">JARINGAN GLOBAL SMART ACCESS</span>
-        <h2 class="text-3xl sm:text-4xl font-black text-slate-900" id="offices-title">Contact Person & Alamat Masing-Masing Negara</h2>
-        <p class="text-slate-600 text-sm sm:text-base leading-relaxed" id="offices-desc">
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900" id="offices-title">Contact Person & Alamat Masing-Masing Negara</h2>
+        <p class="text-slate-600 text-xs sm:text-sm md:text-base leading-relaxed" id="offices-desc">
           Tim konsultan berdedikasi kami siap melayani Anda di kantor kami di Indonesia, Filipina, Nepal, Pakistan, dan Australia.
         </p>
 
-        <!-- Country Filter Tabs in Clean Style -->
-        <div class="flex items-center justify-center gap-2 pt-4 flex-wrap">
-          <button onclick="filterCountryOffice('all')" class="office-tab-btn active bg-slate-900 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition shadow-sm" data-target="all">
+        <!-- Country Filter Tabs: Smooth horizontal swipe on mobile, wrap on tablet/desktop -->
+        <div class="flex items-center justify-start sm:justify-center gap-2 pt-4 overflow-x-auto no-scrollbar pb-2 sm:pb-0 px-1 -mx-2 sm:mx-0">
+          <button onclick="filterCountryOffice('all')" class="office-tab-btn active flex-shrink-0 bg-slate-900 text-white text-xs font-bold px-3.5 sm:px-4 py-2.5 rounded-xl transition shadow-sm min-h-[40px]" data-target="all">
             Semua Negara (All)
           </button>
-          <button onclick="filterCountryOffice('id')" class="office-tab-btn bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 text-xs font-bold px-4 py-2.5 rounded-xl transition shadow-sm" data-target="id">
+          <button onclick="filterCountryOffice('id')" class="office-tab-btn flex-shrink-0 bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 text-xs font-bold px-3.5 sm:px-4 py-2.5 rounded-xl transition shadow-sm min-h-[40px]" data-target="id">
             🇮🇩 Indonesia
           </button>
-          <button onclick="filterCountryOffice('ph')" class="office-tab-btn bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 text-xs font-bold px-4 py-2.5 rounded-xl transition shadow-sm" data-target="ph">
+          <button onclick="filterCountryOffice('ph')" class="office-tab-btn flex-shrink-0 bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 text-xs font-bold px-3.5 sm:px-4 py-2.5 rounded-xl transition shadow-sm min-h-[40px]" data-target="ph">
             🇵🇭 Filipina (Philippines)
           </button>
-          <button onclick="filterCountryOffice('np')" class="office-tab-btn bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 text-xs font-bold px-4 py-2.5 rounded-xl transition shadow-sm" data-target="np">
+          <button onclick="filterCountryOffice('np')" class="office-tab-btn flex-shrink-0 bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 text-xs font-bold px-3.5 sm:px-4 py-2.5 rounded-xl transition shadow-sm min-h-[40px]" data-target="np">
             🇳🇵 Nepal
           </button>
-          <button onclick="filterCountryOffice('pk')" class="office-tab-btn bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 text-xs font-bold px-4 py-2.5 rounded-xl transition shadow-sm" data-target="pk">
+          <button onclick="filterCountryOffice('pk')" class="office-tab-btn flex-shrink-0 bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 text-xs font-bold px-3.5 sm:px-4 py-2.5 rounded-xl transition shadow-sm min-h-[40px]" data-target="pk">
             🇵🇰 Pakistan
           </button>
-          <button onclick="filterCountryOffice('au')" class="office-tab-btn bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 text-xs font-bold px-4 py-2.5 rounded-xl transition shadow-sm" data-target="au">
+          <button onclick="filterCountryOffice('au')" class="office-tab-btn flex-shrink-0 bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 text-xs font-bold px-3.5 sm:px-4 py-2.5 rounded-xl transition shadow-sm min-h-[40px]" data-target="au">
             🇦🇺 Australia (Head Support)
           </button>
         </div>
@@ -971,21 +975,33 @@
         <div class="flex items-center gap-2 mb-1">
           <span class="bg-brandRed text-[10px] font-extrabold px-2.5 py-0.5 rounded-full uppercase tracking-wider text-white">100% Bebas Biaya</span>
         </div>
-        <h3 class="text-xl font-black text-slate-900" id="modal-title">Jadwalkan Konsultasi Gratis</h3>
+  <!-- Consultation Modal in Clean White Styling: Max height and smooth scrolling on mobile -->
+  <div id="consultation-modal" class="fixed inset-0 z-50 hidden bg-slate-900/50 backdrop-blur-sm flex items-center justify-center p-3 sm:p-4 overflow-y-auto">
+    <div class="bg-white rounded-2xl max-w-lg w-full shadow-2xl border border-slate-200 overflow-hidden relative my-6 max-h-[92vh] flex flex-col">
+      
+      <!-- Modal Header -->
+      <div class="bg-slate-50 border-b border-slate-200 p-4 sm:p-6 relative flex-shrink-0">
+        <button onclick="closeConsultationModal()" class="absolute top-3.5 right-3.5 text-slate-400 hover:text-slate-700 p-2 text-lg min-w-[36px] min-h-[36px] flex items-center justify-center rounded-lg hover:bg-slate-100" aria-label="Tutup modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="flex items-center gap-2 mb-1">
+          <span class="bg-brandRed text-[10px] font-extrabold px-2.5 py-0.5 rounded-full uppercase tracking-wider text-white">100% Bebas Biaya</span>
+        </div>
+        <h3 class="text-lg sm:text-xl font-black text-slate-900" id="modal-title">Jadwalkan Konsultasi Gratis</h3>
         <p class="text-xs text-slate-600" id="modal-subtitle">Isi data di bawah ini untuk terhubung langsung dengan konsultan resmi negara Anda via WhatsApp.</p>
       </div>
 
-      <!-- Modal Form -->
-      <form id="consultation-form" onsubmit="handleConsultationSubmit(event)" class="p-6 space-y-4 text-xs">
+      <!-- Modal Form: Scrollable inside modal if screen is small -->
+      <form id="consultation-form" onsubmit="handleConsultationSubmit(event)" class="p-4 sm:p-6 space-y-3.5 sm:space-y-4 text-xs overflow-y-auto">
         <div>
           <label class="block font-bold text-slate-800 mb-1" id="m-label-name">Nama Lengkap Siswa / Orang Tua *</label>
-          <input type="text" id="modal-name" required placeholder="Contoh: Budi Santoso / Maria Santos" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brandBlue text-slate-800 text-xs">
+          <input type="text" id="modal-name" required placeholder="Contoh: Budi Santoso / Maria Santos" class="w-full px-3.5 py-2.5 sm:py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brandBlue text-slate-800 text-xs sm:text-sm">
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <div>
             <label class="block font-bold text-slate-800 mb-1" id="m-label-country">Negara Asal Kamu *</label>
-            <select id="modal-country" onchange="updateModalContactPrefix()" required class="w-full px-3 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brandBlue text-slate-800 text-xs bg-white">
+            <select id="modal-country" onchange="updateModalContactPrefix()" required class="w-full px-3 py-2.5 sm:py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brandBlue text-slate-800 text-xs sm:text-sm bg-white">
               <option value="Indonesia">🇮🇩 Indonesia (+62)</option>
               <option value="Philippines">🇵🇭 Filipina (+63)</option>
               <option value="Nepal">🇳🇵 Nepal (+977)</option>
@@ -995,13 +1011,13 @@
           </div>
           <div>
             <label class="block font-bold text-slate-800 mb-1" id="m-label-phone">Nomor WhatsApp *</label>
-            <input type="tel" id="modal-phone" required placeholder="Contoh: 81288994411" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brandBlue text-slate-800 text-xs">
+            <input type="tel" id="modal-phone" required placeholder="Contoh: 81288994411" class="w-full px-3.5 py-2.5 sm:py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brandBlue text-slate-800 text-xs sm:text-sm">
           </div>
         </div>
 
         <div>
           <label class="block font-bold text-slate-800 mb-1" id="m-label-education">Pendidikan Terakhir Saat Ini *</label>
-          <select id="modal-education" required class="w-full px-3 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brandBlue text-slate-800 text-xs bg-white">
+          <select id="modal-education" required class="w-full px-3 py-2.5 sm:py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brandBlue text-slate-800 text-xs sm:text-sm bg-white">
             <option value="Kelas 12 SMA / Fresh Graduate">Kelas 12 SMA / Fresh Graduate (Langsung S1)</option>
             <option value="Senior High School Graduate (K-12)">Senior High School Graduate (K-12)</option>
             <option value="+2 High School (NEB Nepal)">+2 High School (NEB Nepal)</option>
@@ -1012,19 +1028,19 @@
 
         <div>
           <label class="block font-bold text-slate-800 mb-1" id="m-label-major">Jurusan Minat di Australia</label>
-          <input type="text" id="modal-major" placeholder="Misal: Information Tech, Business, Nursing, Engineering" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brandBlue text-slate-800 text-xs">
+          <input type="text" id="modal-major" placeholder="Misal: Information Tech, Business, Nursing, Engineering" class="w-full px-3.5 py-2.5 sm:py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brandBlue text-slate-800 text-xs sm:text-sm">
         </div>
 
         <div class="pt-2">
-          <button type="submit" class="w-full btn-red-action text-white font-extrabold py-3.5 rounded-xl transition flex items-center justify-center gap-2 shadow-md text-sm" id="m-submit-btn">
-            <i class="fa-brands fa-whatsapp text-lg"></i>
+          <button type="submit" class="w-full btn-red-action text-white font-extrabold py-3.5 rounded-xl transition flex items-center justify-center gap-2 shadow-md text-xs sm:text-sm min-h-[46px]" id="m-submit-btn">
+            <i class="fa-brands fa-whatsapp text-base sm:text-lg"></i>
             <span>Kirim & Hubungkan ke Konsultan Resmi</span>
           </button>
         </div>
 
         <!-- Custom Notification Alert Box (No Native alert()) -->
         <div id="modal-alert-box" class="hidden p-3 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs flex items-center gap-2">
-          <i class="fa-solid fa-circle-check text-emerald-600 text-sm"></i>
+          <i class="fa-solid fa-circle-check text-emerald-600 text-sm flex-shrink-0"></i>
           <span id="modal-alert-msg">Data berhasil diverifikasi! Mengarahkan ke WhatsApp konsultan resmi...</span>
         </div>
       </form>
@@ -1044,8 +1060,6 @@
         flag: "🇮🇩",
         name: "Indonesia",
         isRtl: false,
-        intakeBadge: "Intake 2026 / 2027",
-        intakeText: "Pendaftaran Intake Semester Australia Kini Telah Dibuka!",
         topOfficesBtn: "5 Kantor Perwakilan Global",
         navWhy: "Kenapa Australia?",
         navPathway: "Jalur S1 Lulusan SMA",
@@ -1121,8 +1135,6 @@
         flag: "🇬🇧",
         name: "English",
         isRtl: false,
-        intakeBadge: "Intake 2026 / 2027",
-        intakeText: "Australian University Semester Intake is Now Open for Application!",
         topOfficesBtn: "5 Global Regional Offices",
         navWhy: "Why Australia?",
         navPathway: "High School to Bachelor",
@@ -1198,8 +1210,6 @@
         flag: "🇵🇭",
         name: "Filipino",
         isRtl: false,
-        intakeBadge: "Intake 2026 / 2027",
-        intakeText: "Bukas na ang Intake Semester sa Australia para sa mga Estudyante!",
         topOfficesBtn: "5 Opisina sa Buong Mundo",
         navWhy: "Bakit Australia?",
         navPathway: "Diretso Bachelor mula SHS",
@@ -1275,8 +1285,6 @@
         flag: "🇳🇵",
         name: "नेपाली",
         isRtl: false,
-        intakeBadge: "भर्ना २०२६ / २०२७ खुला",
-        intakeText: "अस्ट्रेलियाका विश्वविद्यालयहरूमा आगामी इन्टेकका लागि आवेदन खुला भएको छ!",
         topOfficesBtn: "५ विश्वव्यापी क्षेत्रीय कार्यालयहरू",
         navWhy: "किन अस्ट्रेलिया?",
         navPathway: "+2 पछि सिधै स्नातक (Bachelor)",
@@ -1352,8 +1360,6 @@
         flag: "🇵🇰",
         name: "اردو",
         isRtl: true,
-        intakeBadge: "داخلے 2026 / 2027 جاری ہیں",
-        intakeText: "آسٹریلیا کی ممتاز یونیورسٹیوں میں اگلے سمسٹر کے داخلے شروع ہو چکے ہیں!",
         topOfficesBtn: "5 بین الاقوامی علاقائی دفاتر",
         navWhy: "آسٹریلیا کیوں؟",
         navPathway: "انٹرمیڈیٹ کے بعد براہِ راست بیچلر",
@@ -1429,7 +1435,7 @@
     // Current Active Language State
     let currentLang = 'id';
 
-    // Function to Switch Languages
+    // Function to Switch Languages safely
     function setLanguage(langCode) {
       if (!translations[langCode]) return;
       currentLang = langCode;
@@ -1439,10 +1445,8 @@
       document.getElementById('current-lang-flag').textContent = data.flag;
       document.getElementById('current-lang-text').textContent = data.name;
 
-      // Update text nodes
-      document.getElementById('intake-badge').textContent = data.intakeBadge;
-      document.getElementById('intake-text').textContent = data.intakeText;
-      document.getElementById('top-offices-btn').textContent = data.topOfficesBtn;
+      const topOfficesBtn = document.getElementById('top-offices-btn');
+      if (topOfficesBtn) topOfficesBtn.textContent = data.topOfficesBtn;
 
       document.getElementById('nav-why').textContent = data.navWhy;
       document.getElementById('nav-pathway').textContent = data.navPathway;
