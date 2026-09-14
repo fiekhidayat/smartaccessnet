@@ -1,0 +1,1691 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Access Internasional | Fast-Track Study in Australia</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brandBlue: '#0d6efd',
+            brandBlueDark: '#0a3875',
+            brandNavy: '#081325',
+            brandRed: '#e62429',
+            brandRedHover: '#c81e22',
+            brandCyan: '#00b4d8'
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'sans-serif'],
+            urdu: ['Noto Nastaliq Urdu', 'Arial', 'sans-serif'],
+            nepali: ['Mukta', 'Noto Sans Devanagari', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Mukta:wght@400;600;700&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .rtl-support {
+      direction: rtl;
+      text-align: right;
+    }
+    .glass-nav-light {
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+    .hero-light-gradient {
+      background: radial-gradient(circle at 85% 15%, rgba(13, 110, 253, 0.08) 0%, transparent 40%),
+                  radial-gradient(circle at 15% 85%, rgba(230, 36, 41, 0.06) 0%, transparent 45%),
+                  #ffffff;
+    }
+    .card-clean {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .card-clean:hover {
+      transform: translateY(-4px);
+      border-color: #93c5fd;
+      box-shadow: 0 16px 32px -8px rgba(13, 110, 253, 0.12);
+    }
+    .btn-red-action {
+      background: linear-gradient(135deg, #e62429 0%, #dc2626 100%);
+      box-shadow: 0 6px 20px -4px rgba(230, 36, 41, 0.38);
+      transition: all 0.2s ease;
+    }
+    .btn-red-action:hover {
+      background: linear-gradient(135deg, #d31a1f 0%, #b91c1c 100%);
+      box-shadow: 0 8px 24px -3px rgba(230, 36, 41, 0.48);
+      transform: translateY(-1px);
+    }
+    .btn-blue-action {
+      background: linear-gradient(135deg, #0d6efd 0%, #0284c7 100%);
+      box-shadow: 0 6px 20px -4px rgba(13, 110, 253, 0.32);
+      transition: all 0.2s ease;
+    }
+    .btn-blue-action:hover {
+      background: linear-gradient(135deg, #0b5ed7 0%, #0369a1 100%);
+      box-shadow: 0 8px 24px -3px rgba(13, 110, 253, 0.42);
+      transform: translateY(-1px);
+    }
+    .badge-subtle-blue {
+      background-color: #eff6ff;
+      color: #0d6efd;
+      border: 1px solid #bfdbfe;
+    }
+    .badge-subtle-red {
+      background-color: #fef2f2;
+      color: #dc2626;
+      border: 1px solid #fecaca;
+    }
+  </style>
+</head>
+<body class="bg-white text-slate-800 font-sans antialiased selection:bg-brandBlue selection:text-white">
+
+  <!-- Top Mini Notice Bar in Crisp Light Slate & Blue -->
+  <div class="bg-slate-50 text-slate-600 text-xs py-2 px-4 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-brandRed text-white tracking-wide uppercase shadow-sm" id="intake-badge">Intake 2026 / 2027</span>
+        <span id="intake-text" class="text-slate-700 font-medium">Pendaftaran Intake Semester Australia Kini Telah Dibuka!</span>
+      </div>
+      <div class="flex items-center gap-4 text-xs font-medium">
+        <a href="#offices" class="hover:text-brandBlue flex items-center gap-1.5 transition-colors text-slate-600">
+          <i class="fa-solid fa-earth-asia text-brandBlue"></i>
+          <span id="top-offices-btn">5 Kantor Perwakilan Global</span>
+        </a>
+        <span class="text-slate-300">|</span>
+        <a href="mailto:info@thesmartaccess.net" class="hover:text-brandRed flex items-center gap-1.5 transition-colors text-slate-600">
+          <i class="fa-solid fa-envelope text-brandRed"></i>
+          <span>info@thesmartaccess.net</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Primary Sticky Header: Pure White with Soft Shadow -->
+  <header class="sticky top-0 z-50 glass-nav-light border-b border-slate-200 shadow-sm transition-all duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Brand Logo matching official Smart Access design -->
+        <a href="#" class="flex items-center gap-3.5 group">
+          <div class="relative w-12 h-12 flex-shrink-0 transition-transform group-hover:scale-105 duration-200">
+            <svg viewBox="0 0 160 160" class="w-full h-full drop-shadow">
+              <defs>
+                <linearGradient id="logoBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#38bdf8" />
+                  <stop offset="50%" stop-color="#0284c7" />
+                  <stop offset="100%" stop-color="#075985" />
+                </linearGradient>
+                <linearGradient id="logoRed" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#f87171" />
+                  <stop offset="60%" stop-color="#dc2626" />
+                  <stop offset="100%" stop-color="#991b1b" />
+                </linearGradient>
+              </defs>
+              <!-- Signal / Radar Waves (Blue) -->
+              <path d="M 108 30 A 40 40 0 0 1 146 68" fill="none" stroke="#0284c7" stroke-width="4.5" stroke-linecap="round"/>
+              <path d="M 120 18 A 58 58 0 0 1 162 60" fill="none" stroke="#0ea5e9" stroke-width="4" stroke-linecap="round"/>
+              <!-- Red upper-left arrow -->
+              <path d="M 140 70 C 142 114, 98 138, 64 128 L 80 114 C 104 122, 122 104, 118 76 C 115 60, 104 46, 88 38 L 98 18 C 126 34, 138 52, 140 70 Z" fill="url(#logoRed)"/>
+              <!-- Blue lower-right arrow -->
+              <path d="M 20 84 C 18 40, 62 18, 96 28 L 80 42 C 56 34, 38 52, 42 80 C 45 96, 56 112, 72 122 L 62 140 C 34 124, 22 104, 20 84 Z" fill="url(#logoBlue)"/>
+            </svg>
+          </div>
+          <div class="flex flex-col">
+            <div class="flex items-baseline gap-1.5">
+              <span class="text-2xl font-black tracking-wider text-blue-600">SMART</span>
+              <span class="text-2xl font-black tracking-wider text-red-600 font-serif">ACCESS</span>
+            </div>
+            <span class="text-[9px] font-bold uppercase tracking-[0.24em] text-slate-500 -mt-1">Internasional</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links in Clean Slate -->
+        <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-700">
+          <a href="#why-australia" class="hover:text-brandBlue transition-colors py-1" id="nav-why">Kenapa Australia?</a>
+          <a href="#pathway" class="hover:text-brandBlue transition-colors py-1" id="nav-pathway">Jalur S1 Lulusan SMA</a>
+          <a href="#advantages" class="hover:text-brandBlue transition-colors py-1" id="nav-advantages">Keunggulan & Karir</a>
+          <a href="#offices" class="hover:text-brandBlue transition-colors py-1" id="nav-offices">Kantor Global</a>
+          <a href="#faq" class="hover:text-brandBlue transition-colors py-1" id="nav-faq">FAQ</a>
+        </nav>
+
+        <!-- Right Side: Language Switcher & Consultation CTA -->
+        <div class="flex items-center gap-3">
+          
+          <!-- Language Dropdown Switcher -->
+          <div class="relative" id="lang-menu-wrapper">
+            <button id="lang-dropdown-btn" onclick="toggleLangDropdown()" class="flex items-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-semibold px-3 py-2 rounded-lg border border-slate-300 transition">
+              <span id="current-lang-flag">🇮🇩</span>
+              <span id="current-lang-text">Indonesia</span>
+              <i class="fa-solid fa-chevron-down text-[10px] text-slate-500 transition-transform duration-200" id="lang-arrow"></i>
+            </button>
+
+            <!-- Dropdown Menu -->
+            <div id="lang-dropdown" class="hidden absolute right-0 mt-2 w-52 bg-white border border-slate-200 rounded-xl shadow-xl py-2 z-50 text-xs">
+              <div class="px-3 py-1.5 text-[10px] uppercase font-bold text-slate-400 tracking-wider border-b border-slate-100">Pilih Bahasa / Language</div>
+              <button onclick="setLanguage('id')" class="w-full flex items-center gap-2.5 px-3 py-2 hover:bg-blue-50 text-left text-slate-700 hover:text-brandBlue transition">
+                <span>🇮🇩</span> <span class="font-semibold">Bahasa Indonesia</span>
+              </button>
+              <button onclick="setLanguage('en')" class="w-full flex items-center gap-2.5 px-3 py-2 hover:bg-blue-50 text-left text-slate-700 hover:text-brandBlue transition">
+                <span>🇬🇧</span> <span class="font-semibold">English (International)</span>
+              </button>
+              <button onclick="setLanguage('tl')" class="w-full flex items-center gap-2.5 px-3 py-2 hover:bg-blue-50 text-left text-slate-700 hover:text-brandBlue transition">
+                <span>🇵🇭</span> <span class="font-semibold">Filipino (Tagalog)</span>
+              </button>
+              <button onclick="setLanguage('ne')" class="w-full flex items-center gap-2.5 px-3 py-2 hover:bg-blue-50 text-left text-slate-700 hover:text-brandBlue transition">
+                <span>🇳🇵</span> <span class="font-semibold font-nepali">नेपाली (Nepal)</span>
+              </button>
+              <button onclick="setLanguage('ur')" class="w-full flex items-center gap-2.5 px-3 py-2 hover:bg-blue-50 text-left text-slate-700 hover:text-brandBlue transition">
+                <span>🇵🇰</span> <span class="font-semibold font-urdu">اردو (Pakistan)</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Main CTA Button (Crimson Red) -->
+          <button onclick="openConsultationModal()" class="hidden sm:inline-flex items-center gap-2 btn-red-action text-white text-xs md:text-sm font-bold px-4 py-2.5 rounded-lg transition" id="header-cta-btn">
+            <i class="fa-solid fa-headset"></i>
+            <span>Konsultasi Gratis!</span>
+          </button>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button onclick="toggleMobileMenu()" class="lg:hidden text-slate-600 hover:text-slate-900 p-2 rounded-md hover:bg-slate-100">
+            <i class="fa-solid fa-bars text-xl" id="menu-icon"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu in White -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-200 px-6 py-4 space-y-3 shadow-lg">
+      <a href="#why-australia" onclick="toggleMobileMenu()" class="block text-slate-700 hover:text-brandBlue font-medium py-1" id="m-nav-why">Kenapa Australia?</a>
+      <a href="#pathway" onclick="toggleMobileMenu()" class="block text-slate-700 hover:text-brandBlue font-medium py-1" id="m-nav-pathway">Jalur S1 Lulusan SMA</a>
+      <a href="#advantages" onclick="toggleMobileMenu()" class="block text-slate-700 hover:text-brandBlue font-medium py-1" id="m-nav-advantages">Keuntungan Karier Global</a>
+      <a href="#offices" onclick="toggleMobileMenu()" class="block text-slate-700 hover:text-brandBlue font-medium py-1" id="m-nav-offices">Kontak & Kantor Negara</a>
+      <a href="#faq" onclick="toggleMobileMenu()" class="block text-slate-700 hover:text-brandBlue font-medium py-1" id="m-nav-faq">Tanya Jawab (FAQ)</a>
+      <div class="pt-2">
+        <button onclick="openConsultationModal(); toggleMobileMenu();" class="w-full flex items-center justify-center gap-2 btn-red-action text-white font-bold py-3 rounded-lg shadow" id="m-cta-btn">
+          <i class="fa-solid fa-comments"></i>
+          <span>Konsultasi Gratis Sekarang!</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section: Clean White with Subtle Blue-Red Accents -->
+  <section class="hero-light-gradient text-slate-900 relative overflow-hidden py-16 lg:py-24 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Hero Text Column -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2.5 badge-subtle-blue px-3.5 py-1.5 rounded-full text-xs font-bold shadow-sm">
+            <span class="flex h-2 w-2 relative">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-500 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-600"></span>
+            </span>
+            <span id="hero-badge">Solusi Layanan Cepat Kuliah di Australia</span>
+          </div>
+
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-tight text-slate-950" id="hero-title">
+            Lulusan SMA bisa langsung mulai kuliah <span class="text-brandBlue font-extrabold">S1 (Bachelor)</span> di Australia.
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-600 font-normal leading-relaxed" id="hero-subtitle">
+            Tanpa ribet, dengan pendampingan penuh dari <strong class="text-black font-extrabold">Smart Access Internasional</strong>. Kami mengurus verifikasi dokumen, pendaftaran universitas, visa pelajar, hingga akomodasi di Australia.
+          </p>
+
+          <!-- Quick Value Badges in Clean White/Border style -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-xs">
+            <div class="flex items-center gap-2 bg-white border border-slate-200 p-3 rounded-xl shadow-sm">
+              <i class="fa-solid fa-graduation-cap text-brandBlue text-base"></i>
+              <span id="quick-badge-1" class="font-bold text-slate-800">Direct Entry S1</span>
+            </div>
+            <div class="flex items-center gap-2 bg-white border border-slate-200 p-3 rounded-xl shadow-sm">
+              <i class="fa-solid fa-passport text-brandRed text-base"></i>
+              <span id="quick-badge-2" class="font-bold text-slate-800">Garansi Layanan Visa</span>
+            </div>
+            <div class="flex items-center gap-2 bg-white border border-slate-200 p-3 rounded-xl shadow-sm col-span-2 sm:col-span-1">
+              <i class="fa-solid fa-briefcase text-emerald-600 text-base"></i>
+              <span id="quick-badge-3" class="font-bold text-slate-800">Izin Kerja Resmi</span>
+            </div>
+          </div>
+
+          <!-- Hero Action Buttons -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-3">
+            <button onclick="openConsultationModal()" class="inline-flex justify-center items-center gap-3 btn-red-action text-white font-extrabold px-8 py-4 rounded-xl text-base shadow-lg" id="hero-cta-main">
+              <i class="fa-brands fa-whatsapp text-xl"></i>
+              <span>Konsultasi Gratis Sekarang!</span>
+            </button>
+            <a href="#why-australia" class="inline-flex justify-center items-center gap-2 bg-white hover:bg-slate-50 border-2 border-slate-200 hover:border-brandBlue text-slate-700 hover:text-brandBlue font-bold px-6 py-4 rounded-xl text-sm transition shadow-sm" id="hero-cta-secondary">
+              <i class="fa-solid fa-compass text-brandBlue"></i>
+              <span>Pelajari Keuntungan</span>
+            </a>
+          </div>
+
+          <!-- Student Trust Quote in Light Style -->
+          <div class="flex items-center gap-4 pt-4 border-t border-slate-200 text-xs text-slate-500">
+            <div class="flex -space-x-2">
+              <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white object-cover" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80" alt="Student" onerror="this.src='https://placehold.co/100x100/0284c7/ffffff?text=User'">
+              <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white object-cover" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&auto=format&fit=crop&q=80" alt="Student" onerror="this.src='https://placehold.co/100x100/dc2626/ffffff?text=User'">
+              <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white object-cover" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=100&auto=format&fit=crop&q=80" alt="Student" onerror="this.src='https://placehold.co/100x100/0369a1/ffffff?text=User'">
+              <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white object-cover" src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=100&auto=format&fit=crop&q=80" alt="Student" onerror="this.src='https://placehold.co/100x100/e62429/ffffff?text=User'">
+            </div>
+            <div>
+              <p class="text-slate-900 font-bold" id="hero-trust-title">Mendukung Pelajar dari 5 Negara</p>
+              <p id="hero-trust-desc">Indonesia, Philippines, Nepal, Pakistan & Australia Network</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Fast-Track Card: Crisp White with Red and Blue Highlights -->
+        <div class="lg:col-span-5">
+          <div class="relative bg-white p-7 rounded-2xl border-2 border-slate-200/90 shadow-xl shadow-slate-200/50 space-y-5">
+            
+            <div class="flex items-center justify-between pb-4 border-b border-slate-100">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-blue-50 text-brandBlue flex items-center justify-center font-bold text-lg border border-blue-100">
+                  <i class="fa-solid fa-paper-plane"></i>
+                </div>
+                <div>
+                  <h3 class="font-extrabold text-sm sm:text-base text-slate-900" id="card-check-title">Kalkulator Jalur Cepat S1</h3>
+                  <p class="text-[11px] text-slate-500 font-medium" id="card-check-subtitle">Cek kelayakan kuliah ke Australia</p>
+                </div>
+              </div>
+              <span class="text-[10px] font-extrabold bg-emerald-50 text-emerald-700 px-2.5 py-1 rounded-full border border-emerald-200">Lulusan SMA OK</span>
+            </div>
+
+            <!-- Pathway Stepper Summary in Clean Card format -->
+            <div class="space-y-3 text-xs">
+              <div class="flex items-start gap-3 p-3 rounded-xl bg-slate-50/80 border border-slate-200/80">
+                <div class="w-6 h-6 rounded-full bg-brandBlue text-white font-extrabold flex items-center justify-center flex-shrink-0 text-xs">1</div>
+                <div>
+                  <span class="font-bold text-slate-900 block" id="card-step-1-title">Lulusan SMA / K-12 / +2 / Intermediate</span>
+                  <span class="text-slate-600 text-[11px] leading-relaxed" id="card-step-1-desc">Ijazah sekolah menengah diakui langsung untuk intake S1 Bachelor.</span>
+                </div>
+              </div>
+              <div class="flex items-start gap-3 p-3 rounded-xl bg-slate-50/80 border border-slate-200/80">
+                <div class="w-6 h-6 rounded-full bg-brandRed text-white font-extrabold flex items-center justify-center flex-shrink-0 text-xs">2</div>
+                <div>
+                  <span class="font-bold text-slate-900 block" id="card-step-2-title">Proses Kilat Letter of Offer (CoE)</span>
+                  <span class="text-slate-600 text-[11px] leading-relaxed" id="card-step-2-desc">Bantuan pemilihan jurusan & beasiswa potongan biaya studi.</span>
+                </div>
+              </div>
+              <div class="flex items-start gap-3 p-3 rounded-xl bg-slate-50/80 border border-slate-200/80">
+                <div class="w-6 h-6 rounded-full bg-emerald-600 text-white font-extrabold flex items-center justify-center flex-shrink-0 text-xs">3</div>
+                <div>
+                  <span class="font-bold text-slate-900 block" id="card-step-3-title">Student Visa Subclass 500</span>
+                  <span class="text-slate-600 text-[11px] leading-relaxed" id="card-step-3-desc">Izin resmi kuliah + kerja sambilan 48 jam per dua minggu.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Eligibility Country Picker -->
+            <div class="pt-1">
+              <label class="block text-xs font-bold text-slate-700 mb-2" id="label-choose-country">Pilih Asal Negara Kamu:</label>
+              <div class="grid grid-cols-2 gap-2">
+                <button type="button" onclick="selectOriginCountry('Indonesia')" class="origin-btn bg-white hover:bg-blue-50 border border-slate-200 hover:border-brandBlue text-slate-800 text-xs font-bold py-2.5 px-3 rounded-xl flex items-center gap-2 transition shadow-sm" data-country="Indonesia">
+                  <span>🇮🇩</span> <span>Indonesia</span>
+                </button>
+                <button type="button" onclick="selectOriginCountry('Philippines')" class="origin-btn bg-white hover:bg-blue-50 border border-slate-200 hover:border-brandBlue text-slate-800 text-xs font-bold py-2.5 px-3 rounded-xl flex items-center gap-2 transition shadow-sm" data-country="Philippines">
+                  <span>🇵🇭</span> <span>Philippines</span>
+                </button>
+                <button type="button" onclick="selectOriginCountry('Nepal')" class="origin-btn bg-white hover:bg-blue-50 border border-slate-200 hover:border-brandBlue text-slate-800 text-xs font-bold py-2.5 px-3 rounded-xl flex items-center gap-2 transition shadow-sm" data-country="Nepal">
+                  <span>🇳🇵</span> <span>Nepal</span>
+                </button>
+                <button type="button" onclick="selectOriginCountry('Pakistan')" class="origin-btn bg-white hover:bg-blue-50 border border-slate-200 hover:border-brandBlue text-slate-800 text-xs font-bold py-2.5 px-3 rounded-xl flex items-center gap-2 transition shadow-sm" data-country="Pakistan">
+                  <span>🇵🇰</span> <span>Pakistan</span>
+                </button>
+              </div>
+            </div>
+
+            <button onclick="openConsultationModal()" class="w-full btn-blue-action text-white font-extrabold py-3.5 rounded-xl text-xs sm:text-sm transition flex items-center justify-center gap-2 shadow-md" id="card-consult-action">
+              <i class="fa-solid fa-calendar-check"></i>
+              <span id="btn-card-check">Mulai Evaluasi Berkas Gratis</span>
+            </button>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Australia: Clean White Theme with Red and Blue Accents -->
+  <section id="why-australia" class="py-20 bg-slate-50/60 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <span class="inline-block badge-subtle-blue text-[11px] font-extrabold uppercase tracking-widest px-3 py-1 rounded-full" id="pillar-subhead">DESTINASI PENDIDIKAN NO. 1 DUNIA</span>
+        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight" id="pillar-title">Kenapa Australia?</h2>
+        <p class="text-base sm:text-lg text-slate-600 leading-relaxed" id="pillar-desc">
+          Keuntungan strategis untuk masa depan karier globalmu. Belajar di institusi berstandar internasional dengan prospek karier yang nyata.
+        </p>
+      </div>
+
+      <!-- 3 Core Highlight Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Pillar 1: Global Skills (Blue Accent) -->
+        <div class="card-clean rounded-2xl p-8 flex flex-col justify-between shadow-sm">
+          <div class="space-y-4">
+            <div class="w-14 h-14 rounded-2xl bg-blue-50 border border-blue-200 text-brandBlue flex items-center justify-center text-2xl shadow-sm">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <h3 class="text-xl font-black text-slate-900" id="feat-1-title">Skill yang dicari industri global</h3>
+            <p class="text-slate-600 leading-relaxed text-sm" id="feat-1-desc">
+              Menguasai kemampuan yang paling dibutuhkan dunia kerja internasional. Kurikulum Australia berbasis praktik nyata di sektor Teknologi, Bisnis, Kesehatan, Teknik, dan Pariwisata.
+            </p>
+          </div>
+          <div class="pt-6 mt-6 border-t border-slate-100 flex items-center text-xs font-bold text-brandBlue gap-2">
+            <i class="fa-solid fa-circle-check text-blue-600"></i>
+            <span id="feat-1-tag">Kurikulum Standar Industri Global</span>
+          </div>
+        </div>
+
+        <!-- Pillar 2: Part-Time Work (Red Accent) -->
+        <div class="card-clean rounded-2xl p-8 flex flex-col justify-between shadow-sm">
+          <div class="space-y-4">
+            <div class="w-14 h-14 rounded-2xl bg-red-50 border border-red-200 text-brandRed flex items-center justify-center text-2xl shadow-sm">
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <h3 class="text-xl font-black text-slate-900" id="feat-2-title">Kerja paruh waktu resmi</h3>
+            <p class="text-slate-600 leading-relaxed text-sm" id="feat-2-desc">
+              Ikuti program magang dan kerja paruh waktu resmi selama kuliah. Mahasiswa internasional memiliki hak kerja resmi hingga 48 jam per dua minggu saat semester aktif dan jam tak terbatas saat libur semester.
+            </p>
+          </div>
+          <div class="pt-6 mt-6 border-t border-slate-100 flex items-center text-xs font-bold text-brandRed gap-2">
+            <i class="fa-solid fa-circle-check text-brandRed"></i>
+            <span id="feat-2-tag">Upah Minimum Tertinggi di Dunia (AUD)</span>
+          </div>
+        </div>
+
+        <!-- Pillar 3: Post-Study Work Visa (Blue & Red Balanced Accent) -->
+        <div class="card-clean rounded-2xl p-8 flex flex-col justify-between shadow-sm">
+          <div class="space-y-4">
+            <div class="w-14 h-14 rounded-2xl bg-indigo-50 border border-indigo-200 text-indigo-700 flex items-center justify-center text-2xl shadow-sm">
+              <i class="fa-solid fa-passport"></i>
+            </div>
+            <h3 class="text-xl font-black text-slate-900" id="feat-3-title">Post-Study Work Visa</h3>
+            <p class="text-slate-600 leading-relaxed text-sm" id="feat-3-desc">
+              Bangun pengalaman kerja internasional setelah lulus lewat Post-Study Work Visa. Kesempatan tinggal dan bekerja penuh waktu di Australia selama bertahun-tahun untuk mempercepat kemajuan kariermu.
+            </p>
+          </div>
+          <div class="pt-6 mt-6 border-t border-slate-100 flex items-center text-xs font-bold text-indigo-700 gap-2">
+            <i class="fa-solid fa-circle-check text-indigo-600"></i>
+            <span id="feat-3-tag">Subclass 485 Temporary Graduate Visa</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- High School Special Announcement Banner (Clean White with Red CTA) -->
+      <div class="mt-12 bg-white rounded-2xl p-8 text-slate-900 shadow-md border-2 border-blue-200 flex flex-col lg:flex-row items-center justify-between gap-6 relative overflow-hidden" id="pathway">
+        <div class="absolute -right-10 -bottom-10 w-60 h-60 bg-blue-50 rounded-full pointer-events-none"></div>
+        <div class="space-y-2 max-w-2xl relative z-10">
+          <div class="inline-flex items-center gap-2 badge-subtle-red px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+            <i class="fa-solid fa-bolt text-brandRed"></i>
+            <span id="banner-fast-badge">Jalur Cepat Tanpa Ribet</span>
+          </div>
+          <h3 class="text-2xl sm:text-3xl font-black text-slate-900" id="banner-fast-title">Lulusan SMA Bisa Langsung Masuk Program Bachelor S1</h3>
+          <p class="text-slate-600 text-sm leading-relaxed" id="banner-fast-desc">
+            Tidak perlu khawatir terhambat sistem matrikulasi yang rumit. Bersama Smart Access Internasional, berkas ijazah SMA kamu kami bantu matching ke universitas dan college terkemuka di Sydney, Melbourne, Brisbane, Adelaide, dan Perth.
+          </p>
+        </div>
+        <button onclick="openConsultationModal()" class="flex-shrink-0 btn-red-action text-white font-extrabold px-7 py-4 rounded-xl shadow-lg transition flex items-center gap-2.5 text-sm relative z-10" id="banner-fast-btn">
+          <i class="fa-solid fa-comments text-base"></i>
+          <span>Konsultasi Gratis Sekarang!</span>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 4-Step Support Framework: Clean White Cards -->
+  <section class="py-16 bg-white border-b border-slate-200" id="advantages">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12 space-y-2">
+        <span class="badge-subtle-blue text-[11px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">Layanan Lengkap End-to-End</span>
+        <h2 class="text-2xl sm:text-3xl font-black text-slate-900" id="how-we-help-title">Pendampingan Penuh Smart Access Internasional</h2>
+        <p class="text-sm sm:text-base text-slate-600" id="how-we-help-subtitle">Dari nol hingga tiba dan menetap dengan aman di Australia.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="card-clean p-6 rounded-2xl shadow-sm space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-blue-50 border border-blue-200 text-brandBlue flex items-center justify-center font-black">01</div>
+          <h4 class="font-extrabold text-slate-900 text-base" id="step-one-title">Konsultasi Jurusan & Minat</h4>
+          <p class="text-xs text-slate-600 leading-relaxed" id="step-one-desc">Analisis profil pendidikan SMA kamu, menentukan jurusan prospektif sesuai passion dan daftar pekerjaan prioritas Australia.</p>
+        </div>
+
+        <div class="card-clean p-6 rounded-2xl shadow-sm space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-red-50 border border-red-200 text-brandRed flex items-center justify-center font-black">02</div>
+          <h4 class="font-extrabold text-slate-900 text-base" id="step-two-title">Letter of Offer & Beasiswa</h4>
+          <p class="text-xs text-slate-600 leading-relaxed" id="step-two-desc">Pengajuan aplikasi resmi ke kampus tujuan serta bantuan pendaftaran beasiswa prestasi internasional.</p>
+        </div>
+
+        <div class="card-clean p-6 rounded-2xl shadow-sm space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-sky-50 border border-sky-200 text-sky-700 flex items-center justify-center font-black">03</div>
+          <h4 class="font-extrabold text-slate-900 text-base" id="step-three-title">Aplikasi Student Visa</h4>
+          <p class="text-xs text-slate-600 leading-relaxed" id="step-three-desc">Pemeriksaan ketat Genuine Student (GS), bukti finansial, tes kesehatan, dan kepatuhan imigrasi Australia.</p>
+        </div>
+
+        <div class="card-clean p-6 rounded-2xl shadow-sm space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-700 flex items-center justify-center font-black">04</div>
+          <h4 class="font-extrabold text-slate-900 text-base" id="step-four-title">Penjemputan & Akomodasi</h4>
+          <p class="text-xs text-slate-600 leading-relaxed" id="step-four-desc">Bantuan akomodasi, penjemputan bandara, pembukaan rekening bank Australia, serta pengenalan komunitas lokal.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Global Offices Directory: Crisp White Cards with Red & Blue Contact Actions -->
+  <section id="offices" class="py-20 bg-slate-50/70 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
+        <span class="inline-block badge-subtle-red text-[11px] font-extrabold uppercase tracking-widest px-3 py-1 rounded-full" id="offices-subhead">JARINGAN GLOBAL SMART ACCESS</span>
+        <h2 class="text-3xl sm:text-4xl font-black text-slate-900" id="offices-title">Contact Person & Alamat Masing-Masing Negara</h2>
+        <p class="text-slate-600 text-sm sm:text-base leading-relaxed" id="offices-desc">
+          Tim konsultan berdedikasi kami siap melayani Anda di kantor kami di Indonesia, Filipina, Nepal, Pakistan, dan Australia.
+        </p>
+
+        <!-- Country Filter Tabs in Clean Style -->
+        <div class="flex items-center justify-center gap-2 pt-4 flex-wrap">
+          <button onclick="filterCountryOffice('all')" class="office-tab-btn active bg-slate-900 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition shadow-sm" data-target="all">
+            Semua Negara (All)
+          </button>
+          <button onclick="filterCountryOffice('id')" class="office-tab-btn bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 text-xs font-bold px-4 py-2.5 rounded-xl transition shadow-sm" data-target="id">
+            🇮🇩 Indonesia
+          </button>
+          <button onclick="filterCountryOffice('ph')" class="office-tab-btn bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 text-xs font-bold px-4 py-2.5 rounded-xl transition shadow-sm" data-target="ph">
+            🇵🇭 Filipina (Philippines)
+          </button>
+          <button onclick="filterCountryOffice('np')" class="office-tab-btn bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 text-xs font-bold px-4 py-2.5 rounded-xl transition shadow-sm" data-target="np">
+            🇳🇵 Nepal
+          </button>
+          <button onclick="filterCountryOffice('pk')" class="office-tab-btn bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 text-xs font-bold px-4 py-2.5 rounded-xl transition shadow-sm" data-target="pk">
+            🇵🇰 Pakistan
+          </button>
+          <button onclick="filterCountryOffice('au')" class="office-tab-btn bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 text-xs font-bold px-4 py-2.5 rounded-xl transition shadow-sm" data-target="au">
+            🇦🇺 Australia (Head Support)
+          </button>
+        </div>
+      </div>
+
+      <!-- Office Cards Grid in Pure White with Red/Blue touches -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="offices-container">
+        
+        <!-- INDONESIA OFFICE -->
+        <div class="office-card card-clean rounded-2xl p-6 relative flex flex-col justify-between shadow-sm" data-country="id">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+              <div class="flex items-center gap-2.5">
+                <span class="text-3xl">🇮🇩</span>
+                <div>
+                  <h3 class="font-extrabold text-slate-900 text-lg">Indonesia Office</h3>
+                  <p class="text-xs text-brandBlue font-bold">Jakarta & Regional Hub</p>
+                </div>
+              </div>
+              <span class="text-[10px] font-bold bg-blue-50 text-brandBlue border border-blue-200 px-2 py-0.5 rounded-full">Operasional</span>
+            </div>
+
+            <div class="space-y-2.5 text-xs text-slate-700">
+              <div class="flex items-start gap-2.5">
+                <i class="fa-solid fa-location-dot text-brandRed mt-0.5 text-sm flex-shrink-0"></i>
+                <p class="leading-relaxed">
+                  <strong>Smart Access Indonesia:</strong> Gedung Cyber 2 Tower, Lt. 18, Jl. H. R. Rasuna Said Blok X-5, Kuningan, Jakarta Selatan 12950
+                </p>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <i class="fa-solid fa-user-tie text-brandBlue flex-shrink-0"></i>
+                <p><strong>Contact Person:</strong> Ibu Nadia Rahmawati (Senior Education Advisor)</p>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <i class="fa-solid fa-phone text-emerald-600 flex-shrink-0"></i>
+                <p><strong>Telepon:</strong> +62 21 5289 7700 / +62 812-8899-4411</p>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <i class="fa-brands fa-whatsapp text-emerald-600 flex-shrink-0 text-sm"></i>
+                <p><strong>WhatsApp:</strong> +62 812 8899 4411 (Chat Cepat)</p>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <i class="fa-solid fa-envelope text-slate-400 flex-shrink-0"></i>
+                <p><strong>Email:</strong> indonesia@thesmartaccess.net</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-5 mt-4 border-t border-slate-100">
+            <a href="https://wa.me/6281288994411?text=Halo%20Smart%20Access%20Indonesia,%20saya%20ingin%20konsultasi%20kuliah%20S1%20ke%20Australia" target="_blank" class="w-full inline-flex items-center justify-center gap-2 btn-blue-action text-white font-bold py-3 rounded-xl text-xs transition">
+              <i class="fa-brands fa-whatsapp text-base"></i>
+              <span>Hubungi Kantor Indonesia</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- PHILIPPINES OFFICE -->
+        <div class="office-card card-clean rounded-2xl p-6 relative flex flex-col justify-between shadow-sm" data-country="ph">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+              <div class="flex items-center gap-2.5">
+                <span class="text-3xl">🇵🇭</span>
+                <div>
+                  <h3 class="font-extrabold text-slate-900 text-lg">Philippines Office</h3>
+                  <p class="text-xs text-brandBlue font-bold">Metro Manila Hub</p>
+                </div>
+              </div>
+              <span class="text-[10px] font-bold bg-blue-50 text-brandBlue border border-blue-200 px-2 py-0.5 rounded-full">Operasional</span>
+            </div>
+
+            <div class="space-y-2.5 text-xs text-slate-700">
+              <div class="flex items-start gap-2.5">
+                <i class="fa-solid fa-location-dot text-brandRed mt-0.5 text-sm flex-shrink-0"></i>
+                <p class="leading-relaxed">
+                  <strong>Smart Access Philippines:</strong> Unit 1408, Ayala Triangle Tower Two, Paseo de Roxas cor. Makati Ave, Makati City, Metro Manila 1226
+                </p>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <i class="fa-solid fa-user-tie text-brandBlue flex-shrink-0"></i>
+                <p><strong>Contact Person:</strong> Mr. Mark Anthony Santos (Australia Admission Lead)</p>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <i class="fa-solid fa-phone text-emerald-600 flex-shrink-0"></i>
+                <p><strong>Telepon:</strong> +63 2 8894 3320</p>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <i class="fa-brands fa-whatsapp text-emerald-600 flex-shrink-0 text-sm"></i>
+                <p><strong>WhatsApp/Viber:</strong> +63 917 854 2200</p>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <i class="fa-solid fa-envelope text-slate-400 flex-shrink-0"></i>
+                <p><strong>Email:</strong> philippines@thesmartaccess.net</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-5 mt-4 border-t border-slate-100">
+            <a href="https://wa.me/639178542200?text=Hello%20Smart%20Access%20Philippines,%20I%20am%20interested%20in%20direct%20Bachelor%20degree%20in%20Australia" target="_blank" class="w-full inline-flex items-center justify-center gap-2 btn-blue-action text-white font-bold py-3 rounded-xl text-xs transition">
+              <i class="fa-brands fa-whatsapp text-base"></i>
+              <span>Hubungi Kantor Philippines</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- NEPAL OFFICE -->
+        <div class="office-card card-clean rounded-2xl p-6 relative flex flex-col justify-between shadow-sm" data-country="np">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+              <div class="flex items-center gap-2.5">
+                <span class="text-3xl">🇳🇵</span>
+                <div>
+                  <h3 class="font-extrabold text-slate-900 text-lg">Nepal Office</h3>
+                  <p class="text-xs text-brandBlue font-bold">Kathmandu Liaison Hub</p>
+                </div>
+              </div>
+              <span class="text-[10px] font-bold bg-blue-50 text-brandBlue border border-blue-200 px-2 py-0.5 rounded-full">Operasional</span>
+            </div>
+
+            <div class="space-y-2.5 text-xs text-slate-700">
+              <div class="flex items-start gap-2.5">
+                <i class="fa-solid fa-location-dot text-brandRed mt-0.5 text-sm flex-shrink-0"></i>
+                <p class="leading-relaxed">
+                  <strong>Smart Access Nepal:</strong> Putalisadak Chowk, Star Mall Building 4th Floor, Ward 28, Kathmandu 44600, Nepal
+                </p>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <i class="fa-solid fa-user-tie text-brandBlue flex-shrink-0"></i>
+                <p><strong>Contact Person:</strong> Mr. Bikash Sharma / Ms. Pooja Adhikari</p>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <i class="fa-solid fa-phone text-emerald-600 flex-shrink-0"></i>
+                <p><strong>Telepon:</strong> +977 1 442 8871 / +977 1 442 8872</p>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <i class="fa-brands fa-whatsapp text-emerald-600 flex-shrink-0 text-sm"></i>
+                <p><strong>WhatsApp:</strong> +977 980 1234 567</p>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <i class="fa-solid fa-envelope text-slate-400 flex-shrink-0"></i>
+                <p><strong>Email:</strong> nepal@thesmartaccess.net</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-5 mt-4 border-t border-slate-100">
+            <a href="https://wa.me/9779801234567?text=Namaste%20Smart%20Access%20Nepal,%20I%20want%20to%20apply%20for%20Bachelor%20in%20Australia" target="_blank" class="w-full inline-flex items-center justify-center gap-2 btn-blue-action text-white font-bold py-3 rounded-xl text-xs transition">
+              <i class="fa-brands fa-whatsapp text-base"></i>
+              <span>Hubungi Kantor Nepal</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- PAKISTAN OFFICE -->
+        <div class="office-card card-clean rounded-2xl p-6 relative flex flex-col justify-between shadow-sm" data-country="pk">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+              <div class="flex items-center gap-2.5">
+                <span class="text-3xl">🇵🇰</span>
+                <div>
+                  <h3 class="font-extrabold text-slate-900 text-lg">Pakistan Office</h3>
+                  <p class="text-xs text-brandBlue font-bold">Islamabad & Lahore</p>
+                </div>
+              </div>
+              <span class="text-[10px] font-bold bg-blue-50 text-brandBlue border border-blue-200 px-2 py-0.5 rounded-full">Operasional</span>
+            </div>
+
+            <div class="space-y-2.5 text-xs text-slate-700">
+              <div class="flex items-start gap-2.5">
+                <i class="fa-solid fa-location-dot text-brandRed mt-0.5 text-sm flex-shrink-0"></i>
+                <p class="leading-relaxed">
+                  <strong>Smart Access Pakistan:</strong> Executive Tower, 3rd Floor, Blue Area, F-6/G-6, Jinnah Avenue, Islamabad 44000
+                </p>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <i class="fa-solid fa-user-tie text-brandBlue flex-shrink-0"></i>
+                <p><strong>Contact Person:</strong> Mr. Tariq Mahmood Khan (Regional Director)</p>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <i class="fa-solid fa-phone text-emerald-600 flex-shrink-0"></i>
+                <p><strong>Telepon:</strong> +92 51 280 4455 / +92 42 3578 1122</p>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <i class="fa-brands fa-whatsapp text-emerald-600 flex-shrink-0 text-sm"></i>
+                <p><strong>WhatsApp:</strong> +92 300 5544 331</p>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <i class="fa-solid fa-envelope text-slate-400 flex-shrink-0"></i>
+                <p><strong>Email:</strong> pakistan@thesmartaccess.net</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-5 mt-4 border-t border-slate-100">
+            <a href="https://wa.me/923005544331?text=Assalam-o-Alaikum%20Smart%20Access%20Pakistan,%20I%20want%20to%20apply%20for%20Australia%20Bachelor%20Study" target="_blank" class="w-full inline-flex items-center justify-center gap-2 btn-blue-action text-white font-bold py-3 rounded-xl text-xs transition">
+              <i class="fa-brands fa-whatsapp text-base"></i>
+              <span>Hubungi Kantor Pakistan</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- AUSTRALIA SUPPORT HEADQUARTERS -->
+        <div class="office-card card-clean rounded-2xl p-6 relative flex flex-col justify-between shadow-sm md:col-span-2 lg:col-span-2 border-2 border-blue-100" data-country="au">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+              <div class="flex items-center gap-2.5">
+                <span class="text-3xl">🇦🇺</span>
+                <div>
+                  <h3 class="font-extrabold text-slate-900 text-lg">Australia Student Onshore Support Hub</h3>
+                  <p class="text-xs text-brandBlue font-bold">Sydney CBD & Melbourne Student Center</p>
+                </div>
+              </div>
+              <span class="text-[10px] font-extrabold bg-blue-50 text-brandBlue border border-blue-200 px-3 py-1 rounded-full">Headquarters Onshore</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5 text-xs text-slate-700">
+              <div class="space-y-2 bg-slate-50/60 p-3.5 rounded-xl border border-slate-100">
+                <div class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-location-dot text-brandRed mt-0.5 text-sm flex-shrink-0"></i>
+                  <p class="leading-relaxed">
+                    <strong>Sydney Office:</strong> Level 22, 201 Elizabeth Street, Sydney NSW 2000, Australia
+                  </p>
+                </div>
+                <div class="flex items-center gap-2.5">
+                  <i class="fa-solid fa-user-shield text-brandBlue flex-shrink-0"></i>
+                  <p><strong>Support Lead:</strong> Cameron Miller (Onshore Student Welfare)</p>
+                </div>
+                <div class="flex items-center gap-2.5">
+                  <i class="fa-solid fa-phone text-emerald-600 flex-shrink-0"></i>
+                  <p><strong>Tel:</strong> +61 2 9283 5500</p>
+                </div>
+              </div>
+
+              <div class="space-y-2 bg-slate-50/60 p-3.5 rounded-xl border border-slate-100">
+                <div class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-location-dot text-brandRed mt-0.5 text-sm flex-shrink-0"></i>
+                  <p class="leading-relaxed">
+                    <strong>Melbourne Office:</strong> Level 11, 459 Collins Street, Melbourne VIC 3000, Australia
+                  </p>
+                </div>
+                <div class="flex items-center gap-2.5">
+                  <i class="fa-brands fa-whatsapp text-emerald-600 flex-shrink-0 text-sm"></i>
+                  <p><strong>Onshore Care WhatsApp:</strong> +61 488 992 110</p>
+                </div>
+                <div class="flex items-center gap-2.5">
+                  <i class="fa-solid fa-envelope text-slate-400 flex-shrink-0"></i>
+                  <p><strong>Email:</strong> australia@thesmartaccess.net</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-5 mt-4 border-t border-slate-100 flex flex-col sm:flex-row gap-3">
+            <a href="https://wa.me/61488992110?text=Hello%20Smart%20Access%20Australia,%20I%20am%20an%20international%20student" target="_blank" class="w-full inline-flex items-center justify-center gap-2 btn-blue-action text-white font-bold py-3 rounded-xl text-xs transition">
+              <i class="fa-brands fa-whatsapp text-white text-base"></i>
+              <span>Hubungi Tim Australia Support (Onshore)</span>
+            </a>
+            <button onclick="openConsultationModal()" class="w-full inline-flex items-center justify-center gap-2 btn-red-action text-white font-bold py-3 rounded-xl text-xs transition">
+              <i class="fa-solid fa-headset text-base"></i>
+              <span>Jadwalkan Sesi Konsultasi</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ Section: Clean White Panels with Smooth Toggle -->
+  <section id="faq" class="py-16 bg-white border-b border-slate-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center mb-12 space-y-2">
+        <span class="badge-subtle-blue text-[11px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">Bantuan & Panduan</span>
+        <h2 class="text-2xl sm:text-3xl font-black text-slate-900" id="faq-title">Pertanyaan yang Sering Diajukan (FAQ)</h2>
+        <p class="text-sm text-slate-600" id="faq-subtitle">Semua hal yang perlu kamu ketahui tentang kuliah S1 di Australia untuk lulusan SMA.</p>
+      </div>
+
+      <div class="space-y-4">
+        
+        <!-- FAQ 1 -->
+        <div class="card-clean rounded-2xl overflow-hidden transition shadow-sm">
+          <button onclick="toggleFaq(1)" class="w-full flex items-center justify-between p-5 text-left font-bold text-slate-900 hover:text-brandBlue transition text-sm sm:text-base">
+            <span id="faq-q1">Apakah lulusan SMA di Indonesia, Filipina, Nepal, dan Pakistan benar-benar bisa langsung S1 di Australia?</span>
+            <i class="fa-solid fa-chevron-down text-slate-400 text-xs transition-transform duration-200" id="faq-arrow-1"></i>
+          </button>
+          <div id="faq-ans-1" class="hidden px-5 pb-5 text-slate-600 text-xs sm:text-sm leading-relaxed border-t border-slate-100 pt-3">
+            <span id="faq-a1">Ya, tentu saja! Lulusan SMA (Indonesia), Senior High School K-12 (Filipina), +2 / NEB (Nepal), dan HSSC / Intermediate (Pakistan) dapat langsung mendaftar ke jenjang Bachelor Degree (S1) 3-4 tahun, atau melalui program Diploma Pathway terintegrasi yang menjamin transfer langsung ke tahun ke-2 Sarjana tanpa membuang waktu.</span>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="card-clean rounded-2xl overflow-hidden transition shadow-sm">
+          <button onclick="toggleFaq(2)" class="w-full flex items-center justify-between p-5 text-left font-bold text-slate-900 hover:text-brandBlue transition text-sm sm:text-base">
+            <span id="faq-q2">Berapa jam mahasiswa internasional diizinkan bekerja paruh waktu di Australia?</span>
+            <i class="fa-solid fa-chevron-down text-slate-400 text-xs transition-transform duration-200" id="faq-arrow-2"></i>
+          </button>
+          <div id="faq-ans-2" class="hidden px-5 pb-5 text-slate-600 text-xs sm:text-sm leading-relaxed border-t border-slate-100 pt-3">
+            <span id="faq-a2">Di bawah regulasi visa pelajar Australia (Subclass 500), mahasiswa diperbolehkan bekerja secara legal hingga 48 jam per dua minggu (fortnight) selama semester perkuliahan berjalan, dan berhak bekerja penuh waktu (tanpa batas jam) saat musim liburan kuliah.</span>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="card-clean rounded-2xl overflow-hidden transition shadow-sm">
+          <button onclick="toggleFaq(3)" class="w-full flex items-center justify-between p-5 text-left font-bold text-slate-900 hover:text-brandBlue transition text-sm sm:text-base">
+            <span id="faq-q3">Bagaimana dengan syarat kemampuan Bahasa Inggris (IELTS / PTE)?</span>
+            <i class="fa-solid fa-chevron-down text-slate-400 text-xs transition-transform duration-200" id="faq-arrow-3"></i>
+          </button>
+          <div id="faq-ans-3" class="hidden px-5 pb-5 text-slate-600 text-xs sm:text-sm leading-relaxed border-t border-slate-100 pt-3">
+            <span id="faq-a3">Mayoritas universitas di Australia menerima tes IELTS, PTE Academic, TOEFL iBT, atau Duolingo. Bagi yang nilainya belum mencukupi, Smart Access Internasional menyediakan paket program persiapan bahasa Inggris (ELICOS) sebelum masa studi utama dimulai.</span>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="card-clean rounded-2xl overflow-hidden transition shadow-sm">
+          <button onclick="toggleFaq(4)" class="w-full flex items-center justify-between p-5 text-left font-bold text-slate-900 hover:text-brandBlue transition text-sm sm:text-base">
+            <span id="faq-q4">Apa saja bantuan yang diberikan oleh Smart Access Internasional?</span>
+            <i class="fa-solid fa-chevron-down text-slate-400 text-xs transition-transform duration-200" id="faq-arrow-4"></i>
+          </button>
+          <div id="faq-ans-4" class="hidden px-5 pb-5 text-slate-600 text-xs sm:text-sm leading-relaxed border-t border-slate-100 pt-3">
+            <span id="faq-a4">Layanan kami bersifat menyeluruh (end-to-end), meliputi: verifikasi berkas nilai ijazah, pemilihan universitas dan beasiswa, penerbitan Letter of Offer dan CoE resmi, pendampingan berkas visa pelajar (GS & financial check), asuransi OSHC, bimbingan briefing pra-keberangkatan, hingga penyediaan akomodasi di Australia.</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Clean Bottom CTA Banner -->
+  <section class="py-16 bg-slate-50 border-b border-slate-200 text-slate-900 relative overflow-hidden">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6 relative z-10">
+      <span class="inline-block badge-subtle-red text-xs uppercase font-extrabold tracking-widest px-4 py-1.5 rounded-full" id="cta-badge">
+        AMBIL LANGKAH PERTAMA HARI INI
+      </span>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-slate-950" id="cta-main-title">
+        Wujudkan Impian Kuliah dan Berkarir di Australia
+      </h2>
+      <p class="text-slate-600 max-w-2xl mx-auto text-base sm:text-lg leading-relaxed" id="cta-main-desc">
+        Hubungi konsultan resmi kami untuk evaluasi profil akademis dan peluang beasiswa kamu secara gratis tanpa dipungut biaya pendaftaran awal.
+      </p>
+      
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+        <button onclick="openConsultationModal()" class="w-full sm:w-auto btn-red-action text-white font-extrabold px-8 py-4 rounded-xl text-base shadow-lg transition flex items-center justify-center gap-3" id="cta-btn-free">
+          <i class="fa-solid fa-calendar-days text-lg"></i>
+          <span>Konsultasi Gratis Sekarang!</span>
+        </button>
+        <a href="#offices" class="w-full sm:w-auto bg-white hover:bg-slate-100 border-2 border-slate-300 text-slate-800 font-bold px-8 py-4 rounded-xl text-base transition flex items-center justify-center gap-2 shadow-sm" id="cta-btn-contact">
+          <i class="fa-solid fa-map-location-dot text-brandBlue"></i>
+          <span>Lihat Kantor Terdekat</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer: Crisp Light Theme with Subtle Dark Tones -->
+  <footer class="bg-white text-slate-600 text-xs py-12 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 pb-10 border-b border-slate-200">
+        
+        <!-- Company Info -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-2">
+            <span class="text-2xl font-black text-brandBlue">SMART</span>
+            <span class="text-2xl font-black text-brandRed font-serif">ACCESS</span>
+          </div>
+          <p class="text-slate-600 text-xs leading-relaxed max-w-sm" id="footer-bio">
+            Smart Access Internasional adalah konsultan pendidikan tinggi terpercaya yang menjembatani siswa dari Indonesia, Filipina, Nepal, dan Pakistan untuk melanjutkan studi gelar Sarjana (S1) dan Pascasarjana di Australia dengan pendampingan penuh.
+          </p>
+          <div class="flex items-center gap-2.5 pt-1">
+            <a href="#" class="w-8 h-8 rounded-lg bg-slate-100 hover:bg-blue-50 flex items-center justify-center text-slate-600 hover:text-brandBlue transition border border-slate-200"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="w-8 h-8 rounded-lg bg-slate-100 hover:bg-red-50 flex items-center justify-center text-slate-600 hover:text-brandRed transition border border-slate-200"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="w-8 h-8 rounded-lg bg-slate-100 hover:bg-blue-50 flex items-center justify-center text-slate-600 hover:text-brandBlue transition border border-slate-200"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="w-8 h-8 rounded-lg bg-slate-100 hover:bg-emerald-50 flex items-center justify-center text-slate-600 hover:text-emerald-600 transition border border-slate-200"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- Links: Quick Nav -->
+        <div class="space-y-3">
+          <h4 class="text-slate-900 font-bold text-xs uppercase tracking-wider" id="footer-nav-title">Menu Cepat</h4>
+          <ul class="space-y-2">
+            <li><a href="#why-australia" class="hover:text-brandBlue transition" id="f-why">Kenapa Australia?</a></li>
+            <li><a href="#pathway" class="hover:text-brandBlue transition" id="f-pathway">Jalur S1 SMA</a></li>
+            <li><a href="#advantages" class="hover:text-brandBlue transition" id="f-advantages">Keuntungan Karier</a></li>
+            <li><a href="#offices" class="hover:text-brandBlue transition" id="f-offices">Kantor Perwakilan</a></li>
+            <li><a href="#faq" class="hover:text-brandBlue transition" id="f-faq">Tanya Jawab (FAQ)</a></li>
+          </ul>
+        </div>
+
+        <!-- Regional Offices list -->
+        <div class="space-y-3">
+          <h4 class="text-slate-900 font-bold text-xs uppercase tracking-wider" id="footer-countries-title">Negara Layanan</h4>
+          <ul class="space-y-2">
+            <li><a href="#offices" onclick="filterCountryOffice('id')" class="hover:text-brandBlue transition">🇮🇩 Indonesia (Jakarta)</a></li>
+            <li><a href="#offices" onclick="filterCountryOffice('ph')" class="hover:text-brandBlue transition">🇵🇭 Filipina (Makati Manila)</a></li>
+            <li><a href="#offices" onclick="filterCountryOffice('np')" class="hover:text-brandBlue transition">🇳🇵 Nepal (Kathmandu)</a></li>
+            <li><a href="#offices" onclick="filterCountryOffice('pk')" class="hover:text-brandBlue transition">🇵🇰 Pakistan (Islamabad)</a></li>
+            <li><a href="#offices" onclick="filterCountryOffice('au')" class="hover:text-brandBlue transition">🇦🇺 Australia (Sydney Hub)</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Support & Legal Section -->
+        <div class="space-y-3">
+          <h4 class="text-slate-900 font-bold text-xs uppercase tracking-wider" id="footer-help-title">Bantuan & Legal</h4>
+          <p class="text-slate-600 text-[11px] leading-relaxed">
+            Marinas Joshi Lawyers is a client-focused private law firm based in Melbourne, Victoria, Australia. The firm delivers tailored legal advice, with particular expertise managed by Principal Lawyer Bibhusan Joshi and lawyer Reyvi Marinas.
+          </p>
+          <p class="text-slate-500 text-[11px] leading-relaxed">
+            CRICOS & Australian Education Standards Compliant advisory for international high school graduates.
+          </p>
+          <div class="pt-1">
+            <span class="text-brandBlue font-bold block text-xs">Email Hotline:</span>
+            <span class="text-slate-700 font-medium">admissions@thesmartaccess.net</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 gap-3">
+        <p>&copy; <span id="current-year">2026</span> Smart Access Internasional. All Rights Reserved.</p>
+        <div class="flex gap-4">
+          <a href="#" class="hover:text-slate-900">Privacy Policy</a>
+          <a href="#" class="hover:text-slate-900">Terms of Service</a>
+          <a href="#" class="hover:text-slate-900">CRICOS Guide</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Consultation Modal in Clean White Styling -->
+  <div id="consultation-modal" class="fixed inset-0 z-50 hidden bg-slate-900/40 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto">
+    <div class="bg-white rounded-2xl max-w-lg w-full shadow-2xl border border-slate-200 overflow-hidden relative my-8">
+      
+      <!-- Modal Header -->
+      <div class="bg-slate-50 border-b border-slate-200 p-6 relative">
+        <button onclick="closeConsultationModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 p-2 text-lg">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="flex items-center gap-2 mb-1">
+          <span class="bg-brandRed text-[10px] font-extrabold px-2.5 py-0.5 rounded-full uppercase tracking-wider text-white">100% Bebas Biaya</span>
+        </div>
+        <h3 class="text-xl font-black text-slate-900" id="modal-title">Jadwalkan Konsultasi Gratis</h3>
+        <p class="text-xs text-slate-600" id="modal-subtitle">Isi data di bawah ini untuk terhubung langsung dengan konsultan resmi negara Anda via WhatsApp.</p>
+      </div>
+
+      <!-- Modal Form -->
+      <form id="consultation-form" onsubmit="handleConsultationSubmit(event)" class="p-6 space-y-4 text-xs">
+        <div>
+          <label class="block font-bold text-slate-800 mb-1" id="m-label-name">Nama Lengkap Siswa / Orang Tua *</label>
+          <input type="text" id="modal-name" required placeholder="Contoh: Budi Santoso / Maria Santos" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brandBlue text-slate-800 text-xs">
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block font-bold text-slate-800 mb-1" id="m-label-country">Negara Asal Kamu *</label>
+            <select id="modal-country" onchange="updateModalContactPrefix()" required class="w-full px-3 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brandBlue text-slate-800 text-xs bg-white">
+              <option value="Indonesia">🇮🇩 Indonesia (+62)</option>
+              <option value="Philippines">🇵🇭 Filipina (+63)</option>
+              <option value="Nepal">🇳🇵 Nepal (+977)</option>
+              <option value="Pakistan">🇵🇰 Pakistan (+92)</option>
+              <option value="Australia">🇦🇺 Australia (+61)</option>
+            </select>
+          </div>
+          <div>
+            <label class="block font-bold text-slate-800 mb-1" id="m-label-phone">Nomor WhatsApp *</label>
+            <input type="tel" id="modal-phone" required placeholder="Contoh: 81288994411" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brandBlue text-slate-800 text-xs">
+          </div>
+        </div>
+
+        <div>
+          <label class="block font-bold text-slate-800 mb-1" id="m-label-education">Pendidikan Terakhir Saat Ini *</label>
+          <select id="modal-education" required class="w-full px-3 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brandBlue text-slate-800 text-xs bg-white">
+            <option value="Kelas 12 SMA / Fresh Graduate">Kelas 12 SMA / Fresh Graduate (Langsung S1)</option>
+            <option value="Senior High School Graduate (K-12)">Senior High School Graduate (K-12)</option>
+            <option value="+2 High School (NEB Nepal)">+2 High School (NEB Nepal)</option>
+            <option value="Intermediate / HSSC (Pakistan)">Intermediate / HSSC (Pakistan)</option>
+            <option value="Sedang Kuliah Diploma / S1 (Ingin Transfer)">Sedang Kuliah Diploma / S1 (Ingin Transfer)</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block font-bold text-slate-800 mb-1" id="m-label-major">Jurusan Minat di Australia</label>
+          <input type="text" id="modal-major" placeholder="Misal: Information Tech, Business, Nursing, Engineering" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brandBlue text-slate-800 text-xs">
+        </div>
+
+        <div class="pt-2">
+          <button type="submit" class="w-full btn-red-action text-white font-extrabold py-3.5 rounded-xl transition flex items-center justify-center gap-2 shadow-md text-sm" id="m-submit-btn">
+            <i class="fa-brands fa-whatsapp text-lg"></i>
+            <span>Kirim & Hubungkan ke Konsultan Resmi</span>
+          </button>
+        </div>
+
+        <!-- Custom Notification Alert Box (No Native alert()) -->
+        <div id="modal-alert-box" class="hidden p-3 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs flex items-center gap-2">
+          <i class="fa-solid fa-circle-check text-emerald-600 text-sm"></i>
+          <span id="modal-alert-msg">Data berhasil diverifikasi! Mengarahkan ke WhatsApp konsultan resmi...</span>
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+  <script>
+    // Comprehensive dictionary for 5 languages:
+    // 1. Indonesian (id)
+    // 2. English (en)
+    // 3. Filipino / Tagalog (tl)
+    // 4. Nepali (ne)
+    // 5. Urdu (ur)
+    const translations = {
+      id: {
+        flag: "🇮🇩",
+        name: "Indonesia",
+        isRtl: false,
+        intakeBadge: "Intake 2026 / 2027",
+        intakeText: "Pendaftaran Intake Semester Australia Kini Telah Dibuka!",
+        topOfficesBtn: "5 Kantor Perwakilan Global",
+        navWhy: "Kenapa Australia?",
+        navPathway: "Jalur S1 Lulusan SMA",
+        navAdvantages: "Keunggulan & Karir",
+        navOffices: "Kantor Global",
+        navFaq: "FAQ",
+        headerCta: "Konsultasi Gratis!",
+        heroBadge: "Solusi Layanan Cepat Kuliah di Australia",
+        heroTitle: "Lulusan SMA bisa langsung mulai kuliah <span class='text-brandBlue font-extrabold'>S1 (Bachelor)</span> di Australia.",
+        heroSubtitle: "Tanpa ribet, dengan pendampingan penuh dari <strong class='text-black font-extrabold'>Smart Access Internasional</strong>. Kami mengurus verifikasi dokumen, pendaftaran universitas, visa pelajar, hingga akomodasi di Australia.",
+        quickBadge1: "Direct Entry S1",
+        quickBadge2: "Garansi Layanan Visa",
+        quickBadge3: "Izin Kerja Resmi",
+        heroCtaMain: "Konsultasi Gratis Sekarang!",
+        heroCtaSec: "Pelajari Keuntungan",
+        heroTrustTitle: "Mendukung Pelajar dari 5 Negara",
+        heroTrustDesc: "Indonesia, Philippines, Nepal, Pakistan & Australia Network",
+        cardCheckTitle: "Kalkulator Jalur Cepat S1",
+        cardCheckSubtitle: "Cek kelayakan kuliah ke Australia",
+        cardStep1Title: "Lulusan SMA / K-12 / +2 / Intermediate",
+        cardStep1Desc: "Ijazah sekolah menengah diakui langsung untuk intake S1 Bachelor.",
+        cardStep2Title: "Proses Kilat Letter of Offer (CoE)",
+        cardStep2Desc: "Bantuan pemilihan jurusan & beasiswa potongan biaya studi.",
+        cardStep3Title: "Student Visa Subclass 500",
+        cardStep3Desc: "Izin resmi kuliah + kerja sambilan 48 jam per dua minggu.",
+        labelChooseCountry: "Pilih Asal Negara Kamu:",
+        btnCardCheck: "Mulai Evaluasi Berkas Gratis",
+        pillarSubhead: "DESTINASI PENDIDIKAN NO. 1 DUNIA",
+        pillarTitle: "Kenapa Australia?",
+        pillarDesc: "Keuntungan strategis untuk masa depan karier globalmu. Belajar di institusi berstandar internasional dengan prospek karier yang nyata.",
+        feat1Title: "Skill yang dicari industri global",
+        feat1Desc: "Menguasai kemampuan yang paling dibutuhkan dunia kerja internasional. Kurikulum Australia berbasis praktik nyata di sektor Teknologi, Bisnis, Kesehatan, Teknik, dan Pariwisata.",
+        feat1Tag: "Kurikulum Standar Industri Global",
+        feat2Title: "Kerja paruh waktu resmi",
+        feat2Desc: "Ikuti program magang dan kerja paruh waktu resmi selama kuliah. Mahasiswa internasional memiliki hak kerja resmi hingga 48 jam per dua minggu saat semester aktif dan jam tak terbatas saat libur.",
+        feat2Tag: "Upah Minimum Tertinggi di Dunia (AUD)",
+        feat3Title: "Post-Study Work Visa",
+        feat3Desc: "Bangun pengalaman kerja internasional setelah lulus lewat Post-Study Work Visa. Kesempatan tinggal dan bekerja penuh waktu di Australia selama bertahun-tahun untuk mempercepat kariermu.",
+        feat3Tag: "Subclass 485 Temporary Graduate Visa",
+        bannerFastBadge: "Jalur Cepat Tanpa Ribet",
+        bannerFastTitle: "Lulusan SMA Bisa Langsung Masuk Program Bachelor S1",
+        bannerFastDesc: "Tidak perlu khawatir terhambat sistem matrikulasi yang rumit. Bersama Smart Access Internasional, berkas ijazah SMA kamu kami bantu matching ke universitas terkemuka di Sydney, Melbourne, Brisbane, Adelaide, dan Perth.",
+        bannerFastBtn: "Konsultasi Gratis Sekarang!",
+        howTitle: "Pendampingan Penuh Smart Access Internasional",
+        howSubtitle: "Dari nol hingga tiba dan menetap dengan aman di Australia.",
+        step1Title: "Konsultasi Jurusan & Minat",
+        step1Desc: "Analisis profil pendidikan SMA kamu, menentukan jurusan prospektif sesuai passion dan daftar prioritas Australia.",
+        step2Title: "Letter of Offer & Beasiswa",
+        step2Desc: "Pengajuan aplikasi resmi ke kampus tujuan serta bantuan pendaftaran beasiswa prestasi internasional.",
+        step3Title: "Aplikasi Student Visa",
+        step3Desc: "Pemeriksaan ketat Genuine Student (GS), bukti finansial, tes kesehatan, dan kepatuhan imigrasi Australia.",
+        step4Title: "Penjemputan & Akomodasi",
+        step4Desc: "Bantuan akomodasi, penjemputan bandara, pembukaan rekening bank Australia, serta pengenalan komunitas lokal.",
+        officesSubhead: "JARINGAN GLOBAL SMART ACCESS",
+        officesTitle: "Contact Person & Alamat Masing-Masing Negara",
+        officesDesc: "Tim konsultan berdedikasi kami siap melayani Anda di kantor kami di Indonesia, Filipina, Nepal, Pakistan, dan Australia.",
+        faqTitle: "Pertanyaan yang Sering Diajukan (FAQ)",
+        faqSubtitle: "Semua hal yang perlu kamu ketahui tentang kuliah S1 di Australia untuk lulusan SMA.",
+        faqQ1: "Apakah lulusan SMA di Indonesia, Filipina, Nepal, dan Pakistan benar-benar bisa langsung S1 di Australia?",
+        faqA1: "Ya, tentu saja! Lulusan SMA (Indonesia), Senior High School K-12 (Filipina), +2 / NEB (Nepal), dan HSSC / Intermediate (Pakistan) dapat langsung mendaftar ke jenjang Bachelor Degree (S1) 3-4 tahun, atau melalui program Diploma Pathway terintegrasi yang menjamin transfer langsung ke tahun ke-2 Sarjana tanpa membuang waktu.",
+        faqQ2: "Berapa jam mahasiswa internasional diizinkan bekerja paruh waktu di Australia?",
+        faqA2: "Di bawah regulasi visa pelajar Australia (Subclass 500), mahasiswa diperbolehkan bekerja secara legal hingga 48 jam per dua minggu (fortnight) selama semester perkuliahan berjalan, dan berhak bekerja penuh waktu (tanpa batas jam) saat musim liburan kuliah.",
+        faqQ3: "Bagaimana dengan syarat kemampuan Bahasa Inggris (IELTS / PTE)?",
+        faqA3: "Mayoritas universitas di Australia menerima tes IELTS, PTE Academic, TOEFL iBT, atau Duolingo. Bagi yang nilainya belum mencukupi, Smart Access Internasional menyediakan paket program persiapan bahasa Inggris (ELICOS) sebelum masa studi utama dimulai.",
+        faqQ4: "Apa saja bantuan yang diberikan oleh Smart Access Internasional?",
+        faqA4: "Layanan kami bersifat menyeluruh (end-to-end), meliputi: verifikasi berkas nilai ijazah, pemilihan universitas dan beasiswa, penerbitan Letter of Offer dan CoE resmi, pendampingan berkas visa pelajar (GS & financial check), asuransi OSHC, bimbingan briefing pra-keberangkatan, hingga penyediaan akomodasi di Australia.",
+        ctaMainTitle: "Wujudkan Impian Kuliah dan Berkarir di Australia",
+        ctaMainDesc: "Hubungi konsultan resmi kami untuk evaluasi profil akademis dan peluang beasiswa kamu secara gratis tanpa dipungut biaya pendaftaran awal.",
+        ctaBtnFree: "Konsultasi Gratis Sekarang!"
+      },
+
+      en: {
+        flag: "🇬🇧",
+        name: "English",
+        isRtl: false,
+        intakeBadge: "Intake 2026 / 2027",
+        intakeText: "Australian University Semester Intake is Now Open for Application!",
+        topOfficesBtn: "5 Global Regional Offices",
+        navWhy: "Why Australia?",
+        navPathway: "High School to Bachelor",
+        navAdvantages: "Careers & Perks",
+        navOffices: "Global Offices",
+        navFaq: "FAQ",
+        headerCta: "Free Consultation!",
+        heroBadge: "Fast-Track Study in Australia Solutions",
+        heroTitle: "High School Graduates Can Start a <span class='text-brandBlue font-extrabold'>Bachelor Degree</span> Directly in Australia.",
+        heroSubtitle: "Hassle-free, with end-to-end dedicated guidance from <strong class='text-black font-extrabold'>Smart Access Internasional</strong>. We assist your document verification, university admission, student visa, and onshore accommodation.",
+        quickBadge1: "Direct Bachelor Entry",
+        quickBadge2: "Visa Assistance Guarantee",
+        quickBadge3: "Official Work Rights",
+        heroCtaMain: "Get Free Consultation Now!",
+        heroCtaSec: "Explore Benefits",
+        heroTrustTitle: "Supporting Students from 5 Nations",
+        heroTrustDesc: "Indonesia, Philippines, Nepal, Pakistan & Australia Network",
+        cardCheckTitle: "Bachelor Fast-Track Calculator",
+        cardCheckSubtitle: "Check your Australia study eligibility",
+        cardStep1Title: "High School / K-12 / +2 / Intermediate",
+        cardStep1Desc: "Secondary school certificate is recognized directly for Bachelor admissions.",
+        cardStep2Title: "Fast Letter of Offer & CoE",
+        cardStep2Desc: "Targeted course selection and international partial scholarships.",
+        cardStep3Title: "Student Visa Subclass 500",
+        cardStep3Desc: "Authorized study with 48 hours per fortnight legal working rights.",
+        labelChooseCountry: "Select Your Home Country:",
+        btnCardCheck: "Start Free Document Evaluation",
+        pillarSubhead: "WORLD'S TOP EDUCATION DESTINATION",
+        pillarTitle: "Why Australia?",
+        pillarDesc: "A strategic advantage for your global career. Study at world-ranked institutions with tangible career prospects and high living standards.",
+        feat1Title: "In-Demand Global Industry Skills",
+        feat1Desc: "Master the skills most sought after in the international job market. Australian curriculum emphasizes hands-on practice in Tech, Business, Healthcare, Engineering, and Hospitality.",
+        feat1Tag: "Global Industry-Aligned Curriculum",
+        feat2Title: "Official Part-Time Work Rights",
+        feat2Desc: "Participate in internships and legitimate part-time jobs during your studies. International students enjoy legal work rights up to 48 hours per fortnight and unlimited hours during semester breaks.",
+        feat2Tag: "World's Highest Minimum Wage (AUD)",
+        feat3Title: "Post-Study Work Visa (Subclass 485)",
+        feat3Desc: "Build international work experience after graduation via the Post-Study Work Visa. Stay and work full-time in Australia for years to accelerate your professional journey.",
+        feat3Tag: "Subclass 485 Temporary Graduate Visa",
+        bannerFastBadge: "Hassle-Free Fast-Track",
+        bannerFastTitle: "High School Graduates Can Enter Direct Bachelor Degrees",
+        bannerFastDesc: "No need to get stuck in complex matriculation systems. Smart Access Internasional bridges your high school diploma directly into top universities across Sydney, Melbourne, Brisbane, Adelaide, and Perth.",
+        bannerFastBtn: "Free Consultation Now!",
+        howTitle: "End-to-End Support from Smart Access Internasional",
+        howSubtitle: "From initial counseling to safe arrival and settlement in Australia.",
+        step1Title: "Major & Career Counseling",
+        step1Desc: "Evaluation of your high school transcripts to map the best major aligning with your aspirations and Australian priority skills.",
+        step2Title: "Offer Letter & Scholarships",
+        step2Desc: "Fast-tracked university application and matching you with merit-based tuition grants.",
+        step3Title: "Student Visa Subclass 500",
+        step3Desc: "Comprehensive Genuine Student (GS) preparation, financial documentation, and immigration compliance.",
+        step4Title: "Arrival & Accommodation",
+        step4Desc: "Airport pickup, student housing arrangements, bank account opening, and onshore community integration.",
+        officesSubhead: "SMART ACCESS GLOBAL NETWORK",
+        officesTitle: "Contact Person & Office Addresses in Each Country",
+        officesDesc: "Our dedicated regional advisors are ready to welcome you at our offices in Indonesia, Philippines, Nepal, Pakistan, and Australia.",
+        faqTitle: "Frequently Asked Questions (FAQ)",
+        faqSubtitle: "Everything you need to know about high school direct bachelor entry in Australia.",
+        faqQ1: "Can high school graduates from Indonesia, Philippines, Nepal, and Pakistan directly join a Bachelor degree?",
+        faqA1: "Yes! SMA graduates (Indonesia), Senior High K-12 (Philippines), +2 / NEB (Nepal), and Intermediate / HSSC (Pakistan) can enter direct 3-4 year Bachelor degrees, or integrated Diploma-to-Degree pathway programs which transfer directly into the 2nd year.",
+        faqQ2: "How many hours can international students legally work in Australia?",
+        faqA2: "Under Australian Student Visa (Subclass 500) rules, international students can work up to 48 hours per fortnight during active semesters, and unlimited hours during recognized term breaks.",
+        faqQ3: "What are the English proficiency requirements (IELTS / PTE)?",
+        faqA3: "Most Australian institutions accept IELTS, PTE Academic, or TOEFL iBT. For students who haven't met the target score yet, Smart Access provides direct packaged English pathways (ELICOS) before the degree begins.",
+        faqQ4: "What full services are provided by Smart Access Internasional?",
+        faqA4: "We provide complete end-to-end guidance: transcript translation and evaluation, university and scholarship placement, Confirmation of Enrolment (CoE), Student Visa processing, OSHC health cover, pre-departure briefings, and onshore student support.",
+        ctaMainTitle: "Turn Your Dream of Studying in Australia into Reality",
+        ctaMainDesc: "Get in touch with our certified educational advisors for a free academic profile assessment and scholarship review today.",
+        ctaBtnFree: "Free Consultation Now!"
+      },
+
+      tl: {
+        flag: "🇵🇭",
+        name: "Filipino",
+        isRtl: false,
+        intakeBadge: "Intake 2026 / 2027",
+        intakeText: "Bukas na ang Intake Semester sa Australia para sa mga Estudyante!",
+        topOfficesBtn: "5 Opisina sa Buong Mundo",
+        navWhy: "Bakit Australia?",
+        navPathway: "Diretso Bachelor mula SHS",
+        navAdvantages: "Trabaho at Benepisyo",
+        navOffices: "Mga Opisina",
+        navFaq: "Mga Tanong (FAQ)",
+        headerCta: "Libreng Konsultasyon!",
+        heroBadge: "Mabilisang Solusyon sa Pag-aaral sa Australia",
+        heroTitle: "Mula High School / K-12, puwede nang magsimula ng <span class='text-brandBlue font-extrabold'>Bachelor Degree (S1)</span> sa Australia.",
+        heroSubtitle: "Walang hassle at may kumpletong gabay mula sa <strong class='text-black font-extrabold'>Smart Access Internasional</strong>. Kami ang mag-aayos ng iyong school admission, student visa, hanggang sa tirahan sa Australia.",
+        quickBadge1: "Direct Bachelor Entry",
+        quickBadge2: "Gabay sa Student Visa",
+        quickBadge3: "May Legal na Work Rights",
+        heroCtaMain: "Libreng Konsultasyon Ngayon!",
+        heroCtaSec: "Alamin ang Benepisyo",
+        heroTrustTitle: "Tumutulong sa mga Estudyante mula sa 5 Bansa",
+        heroTrustDesc: "Indonesia, Philippines, Nepal, Pakistan at Australia Network",
+        cardCheckTitle: "Kalkulator ng Mabilisang S1 Pathway",
+        cardCheckSubtitle: "Suriin ang iyong kwalipikasyon para mag-aral sa Australia",
+        cardStep1Title: "K-12 Senior High School Graduate",
+        cardStep1Desc: "Kinikilala ang iyong diploma para sa direct entry sa Bachelor Degree.",
+        cardStep2Title: "Mabilis na Letter of Offer (CoE)",
+        cardStep2Desc: "Tulong sa pagpili ng kurso at pagkuha ng mga international scholarships.",
+        cardStep3Title: "Student Visa Subclass 500",
+        cardStep3Desc: "Legal na karapatang mag-aral at magtrabaho ng 48 hours bawat dalawang linggo.",
+        labelChooseCountry: "Piliin ang Iyong Bansa:",
+        btnCardCheck: "Simulan ang Libreng Document Evaluation",
+        pillarSubhead: "NANGUNGUNANG DESTINASYON SA EDUKASYON",
+        pillarTitle: "Bakit Australia?",
+        pillarDesc: "Madiskarteng hakbang para sa iyong pandaigdigang karera. Mag-aral sa mga kilalang institusyon na may totoong oportunidad sa trabaho.",
+        feat1Title: "Skill na hinahanap ng global industry",
+        feat1Desc: "Matutunan ang mga kasanayang pinaka-kailangan sa internasyonal na industriya: IT, Business, Healthcare, Engineering, at Hospitality.",
+        feat1Tag: "Praktikal na Kurikulum ng Australia",
+        feat2Title: "Opisyal at legal na part-time work",
+        feat2Desc: "Mag-internship at magtrabaho ng legal habang nag-aaral. May karapatang magtrabaho ng hanggang 48 oras kada dalawang linggo at unlimited hours tuwing bakasyon.",
+        feat2Tag: "Mataas na Minimum Wage (AUD)",
+        feat3Title: "Post-Study Work Visa (Subclass 485)",
+        feat3Desc: "Bumuo ng karanasan sa trabaho pagkatapos grumadweyt. Manatili at magtrabaho nang full-time sa Australia upang palakasin ang iyong propesyon.",
+        feat3Tag: "Subclass 485 Work Visa",
+        bannerFastBadge: "Walang Komplikasyon",
+        bannerFastTitle: "Mula K-12 Graduate Diretso sa Bachelor Degree",
+        bannerFastDesc: "Huwag nang mag-alala sa mahabang proseso. Tutulungan ka ng Smart Access Internasional na maipasok ang iyong mga dokumento sa mga sikat na unibersidad sa Sydney, Melbourne, Brisbane, at Adelaide.",
+        bannerFastBtn: "Libreng Konsultasyon Ngayon!",
+        howTitle: "Buong Suporta mula sa Smart Access Internasional",
+        howSubtitle: "Mula sa Pilipinas hanggang sa iyong ligtas na pagdating sa Australia.",
+        step1Title: "Pagpili ng Tamang Kurso",
+        step1Desc: "Pagsusuri sa iyong High School report card para itugma sa pinakamagandang kurso.",
+        step2Title: "Letter of Offer at Scholarship",
+        step2Desc: "Direktang pagpasa ng application sa mga unibersidad sa Australia.",
+        step3Title: "Student Visa Processing",
+        step3Desc: "Paghahanda ng Genuine Student statement at financial requirements.",
+        step4Title: "Airport Pickup at Titirhan",
+        step4Desc: "Pagsundo sa airport, paghahanap ng student accommodation, at bank account assistance.",
+        officesSubhead: "PANDAIGDIGANG NETWORK",
+        officesTitle: "Contact Person at Tirahan ng Opisina sa Bawat Bansa",
+        officesDesc: "Nakahanda ang aming mga opisina sa Makati Manila, Jakarta, Kathmandu, Islamabad, at Sydney para tulungan ka.",
+        faqTitle: "Mga Madalas Itanong (FAQ)",
+        faqSubtitle: "Lahat ng kailangan mong malaman para sa pag-aaral ng Bachelor sa Australia.",
+        faqQ1: "Puwede bang mag-aral ng Bachelor Degree ang K-12 graduate mula Pilipinas?",
+        faqA1: "Oo! Ang mga nagtapos ng Grade 12 (K-12) ay kwalipikado para sa direct entry sa Bachelor Degree o integrated Diploma pathway patungo sa 2nd year ng University.",
+        faqQ2: "Ilang oras puwedeng magtrabaho ang estudyante sa Australia?",
+        faqA2: "Sa ilalim ng Student Visa 500, puwede kang magtrabaho ng hanggang 48 oras kada dalawang linggo sa panahon ng klase, at walang limitasyon tuwing bakasyon.",
+        faqQ3: "Kailangan ba ng IELTS o PTE?",
+        faqA3: "Tinatanggap ng Australia ang IELTS at PTE. Kung kailangan pa ng pagpapahusay, may kasamang English course package (ELICOS) ang inihahanda ng Smart Access.",
+        faqQ4: "Ano-ano ang mga serbisyo ng Smart Access Internasional?",
+        faqA4: "Lahat ay sagot namin: university placement, scholarship application, visa lodgement, health insurance (OSHC), at pagdating sa Australia.",
+        ctaMainTitle: "Simulan ang Iyong Pangarap sa Australia Ngayon",
+        ctaMainDesc: "Makipag-ugnayan sa aming opisyal na advisor para sa libreng pagsusuri ng iyong mga dokumento nang walang paunang bayad.",
+        ctaBtnFree: "Libreng Konsultasyon Ngayon!"
+      },
+
+      ne: {
+        flag: "🇳🇵",
+        name: "नेपाली",
+        isRtl: false,
+        intakeBadge: "भर्ना २०२६ / २०२७ खुला",
+        intakeText: "अस्ट्रेलियाका विश्वविद्यालयहरूमा आगामी इन्टेकका लागि आवेदन खुला भएको छ!",
+        topOfficesBtn: "५ विश्वव्यापी क्षेत्रीय कार्यालयहरू",
+        navWhy: "किन अस्ट्रेलिया?",
+        navPathway: "+2 पछि सिधै स्नातक (Bachelor)",
+        navAdvantages: "करियर र अवसरहरू",
+        navOffices: "ग्लोबल कार्यालयहरू",
+        navFaq: "प्राय सोधिने प्रश्न (FAQ)",
+        headerCta: "निःशुल्क परामर्श!",
+        heroBadge: "अस्ट्रेलियामा उच्च शिक्षाका लागि द्रुत र भरपर्दो समाधान",
+        heroTitle: "+2 पास विद्यार्थीहरूले अस्ट्रेलियामा सिधै <span class='text-brandBlue font-extrabold'>स्नातक (Bachelor)</span> सुरु गर्न सक्छन्।",
+        heroSubtitle: "कुनै झन्झट बिना, <strong class='text-black font-extrabold'>Smart Access Internasional</strong> को पूर्ण सहयोगमा। हामी डकुमेन्ट प्रमाणीकरण, अफर लेटर, भिसा र बस्ने व्यवस्था सबै मिलाउँछौं।",
+        quickBadge1: "सिधै स्नातक (Direct Bachelor)",
+        quickBadge2: "भिसा प्रक्रियामा पूर्ण सहयोग",
+        quickBadge3: "कानुनी रूपमा काम गर्न पाउने अधिकार",
+        heroCtaMain: "अहिले निःशुल्क परामर्श लिनुहोस्!",
+        heroCtaSec: "अवसरहरू हेर्नुहोस्",
+        heroTrustTitle: "५ देशका विद्यार्थीहरूको भरपर्दो संस्था",
+        heroTrustDesc: "नेपाल, इन्डोनेसिया, फिलिपिन्स, पाकिस्तान र अस्ट्रेलिया नेटवर्क",
+        cardCheckTitle: "स्नातक द्रुत-मार्ग क्यालकुलेटर",
+        cardCheckSubtitle: "अस्ट्रेलिया अध्ययन योग्यता जाँच गर्नुहोस्",
+        cardStep1Title: "+2 / High School पास विद्यार्थी",
+        cardStep1Desc: "तपाईंको कक्षा १२ को नतिजा सिधै स्नातक भर्नाका लागि मान्य छ।",
+        cardStep2Title: "द्रुत अफर लेटर र CoE",
+        cardStep2Desc: "उपयुक्त विषय छनोट र अन्तर्राष्ट्रिय छात्रवृत्तिमा सहयोग।",
+        cardStep3Title: "स्टुडेन्ट भिसा (Subclass 500)",
+        cardStep3Desc: "अध्ययनसँगै पाक्षिक ४८ घण्टा कानुनी रूपमा काम गर्ने सुविधा।",
+        labelChooseCountry: "आफ्नो देश छान्नुहोस्:",
+        btnCardCheck: "निःशुल्क कागजात मूल्याङ्कन सुरु गर्नुहोस्",
+        pillarSubhead: "विश्वको उत्कृष्ट अध्ययन गन्तव्य",
+        pillarTitle: "किन अस्ट्रेलिया?",
+        pillarDesc: "तपाईंको उज्ज्वल भविष्य र अन्तर्राष्ट्रिय करियरका लागि रणनीतिक फाइदा। विश्वस्तरीय शिक्षण संस्था र सुरक्षित वातावरण।",
+        feat1Title: "विश्वव्यापी बजारमा माग भएका सीपहरू",
+        feat1Desc: "अन्तर्राष्ट्रिय रोजगार बजारमा अत्यावश्यक सीपहरू सिक्नुहोस्। प्रविधि, व्यवस्थापन, स्वास्थ्य र इन्जिनियरिङमा व्यावहारिक ज्ञान।",
+        feat1Tag: "उद्योग-केन्द्रित व्यावहारिक शिक्षा",
+        feat2Title: "कानुनी रूपमा पार्ट-टाइम काम",
+        feat2Desc: "पढाइको समयमा पाक्षिक ४८ घण्टा र बिदाको समयमा पूर्णकालीन काम गर्न पाउने कानुनी अधिकार।",
+        feat2Tag: "विश्वमै उच्च न्यूनतम पारिश्रमिक (AUD)",
+        feat3Title: "पोस्ट-स्टडी वर्क भिसा (PSW)",
+        feat3Desc: "पढाइ पूरा गरेपछि अस्ट्रेलियामै बसेर पूर्णकालीन काम गर्ने र अन्तर्राष्ट्रिय अनुभव बटुल्ने अवसर।",
+        feat3Tag: "Subclass 485 ग्र्याजुएट भिसा",
+        bannerFastBadge: "झन्झटमुक्त द्रुत प्रक्रिया",
+        bannerFastTitle: "+2 पास गरेर सिधै Bachelor डिग्री सुरु गर्नुहोस्",
+        bannerFastDesc: "समय खेर नफाली सिधै सिड्नी, मेलबर्न, ब्रिसबेन, एडिलेड र पर्थका उत्कृष्ट विश्वविद्यालयहरूमा अध्ययन गर्नुहोस्।",
+        bannerFastBtn: "निःशुल्क परामर्श लिनुहोस्!",
+        howTitle: "Smart Access Internasional को पूर्ण साथ",
+        howSubtitle: "काठमाडौँ देखि अस्ट्रेलिया पुग्दासम्म हरेक पाइलामा सहयोग।",
+        step1Title: "विषय र करियर परामर्श",
+        step1Desc: "तपाईंको रुचि र बजार माग अनुसार सही विषय छनोट।",
+        step2Title: "अफर लेटर र छात्रवृत्ति",
+        step2Desc: "विश्वविद्यालयमा आवेदन र छात्रवृत्तिका लागि पहल।",
+        step3Title: "भिसा आवेदन प्रक्रिया",
+        step3Desc: "Genuine Student (GS) र वित्तीय कागजातको पूर्ण तयारी।",
+        step4Title: "अस्ट्रेलिया आगमन र आवास",
+        step4Desc: "एयरपोर्ट पिकअप, बैंक खाता खोल्ने र बस्ने कोठाको व्यवस्था।",
+        officesSubhead: "विश्वव्यापी सञ्जाल",
+        officesTitle: "प्रत्येक देशको सम्पर्क व्यक्ति र कार्यालय ठेगाना",
+        officesDesc: "काठमाडौँ, जकार्ता, मनिला, इस्लामावाद र सिड्नीमा रहेका हाम्रा प्रतिनिधिहरू सेवाका लागि तयार छन्।",
+        faqTitle: "प्राय सोधिने प्रश्नहरू (FAQ)",
+        faqSubtitle: "+2 पछि अस्ट्रेलियामा स्नातक अध्ययन सम्बन्धी सम्पूर्ण जानकारी।",
+        faqQ1: "के नेपालका +2 पास विद्यार्थी सिधै Bachelor मा भर्ना हुन सक्छन्?",
+        faqA1: "हो, निश्चित रूपमा! नेपालको NEB +2 पास विद्यार्थीहरू सिधै ३-४ वर्षे ब्याचलर्स डिग्री वा इन्टिग्रेटेड डिप्लोमा पाथवे मार्फत दोस्रो वर्षमा प्रवेश गर्न सक्छन्।",
+        faqQ2: "विद्यार्थीहरूले कति घण्टा काम गर्न पाउँछन्?",
+        faqA2: "कक्षा सञ्चालन भएको समयमा पाक्षिक ४८ घण्टा र कलेज बिदाको समयमा असीमित घण्टा काम गर्न पाइन्छ।",
+        faqQ3: "IELTS वा PTE मा कति अङ्क चाहिन्छ?",
+        faqA3: "अस्ट्रेलियामा IELTS, PTE दुवै मान्य हुन्छन्। अङ्क नपुगेका विद्यार्थीका लागि भाषा कक्षा (ELICOS) प्याकेजको सुविधा उपलब्ध छ।",
+        faqQ4: "Smart Access ले के-के सेवा दिन्छ?",
+        faqA4: "कन्सल्टिङ, डकुमेन्ट तयारी, विश्वविद्यालय भर्ना, भिसा प्रक्रिया, बिमा र अस्ट्रेलिया पुगेपछिको सम्पूर्ण सहयोग प्रदान गर्दछौं।",
+        ctaMainTitle: "अस्ट्रेलियामा अध्ययन गर्ने आफ्नो सपना साकार पार्नुहोस्",
+        ctaMainDesc: "निःशुल्क डकुमेन्ट मूल्याङ्कनका लागि आजै हाम्रा परामर्शदातासँग सम्पर्क गर्नुहोस्।",
+        ctaBtnFree: "निःशुल्क परामर्श लिनुहोस्!"
+      },
+
+      ur: {
+        flag: "🇵🇰",
+        name: "اردو",
+        isRtl: true,
+        intakeBadge: "داخلے 2026 / 2027 جاری ہیں",
+        intakeText: "آسٹریلیا کی ممتاز یونیورسٹیوں میں اگلے سمسٹر کے داخلے شروع ہو چکے ہیں!",
+        topOfficesBtn: "5 بین الاقوامی علاقائی دفاتر",
+        navWhy: "آسٹریلیا کیوں؟",
+        navPathway: "انٹرمیڈیٹ کے بعد براہِ راست بیچلر",
+        navAdvantages: "ملازمت اور فوائد",
+        navOffices: "عالمی دفاتر",
+        navFaq: "عام سوالات (FAQ)",
+        headerCta: "مفت مشاورت حاصل کریں!",
+        heroBadge: "آسٹریلیا میں فوری اور آسان اعلیٰ تعلیم کے مواقع",
+        heroTitle: "انٹرمیڈیٹ (HSSC) کے بعد طالب علم براہِ راست آسٹریلیا میں <span class='text-brandBlue font-extrabold'>بیچلر ڈگری (S1)</span> شروع کر سکتے ہیں۔",
+        heroSubtitle: "بغیر کسی پریشانی کے، <strong class='text-black font-extrabold'>Smart Access Internasional</strong> کی مکمل رہنمائی میں۔ ہم دستاویزات کی تصدیق، داخلہ، ویزا اور رہائش کا مکمل انتظام کرتے ہیں۔",
+        quickBadge1: "براہِ راست بیچلر داخلہ",
+        quickBadge2: "سٹوڈنٹ ویزا میں مکمل مدد",
+        quickBadge3: "قانونی ملازمت کی اجازت",
+        heroCtaMain: "ابھی مفت مشاورت حاصل کریں!",
+        heroCtaSec: "فوائد تفصیل سے دیکھیں",
+        heroTrustTitle: "5 ممالک کے طلباء کے لیے بااعتماد ادارہ",
+        heroTrustDesc: "پاکستان، انڈونیشیا، فلپائن، نیپال اور آسٹریلیا نیٹ ورک",
+        cardCheckTitle: "بیچلر فاسٹ ٹریک کیلکولیٹر",
+        cardCheckSubtitle: "آسٹریلیا میں تعلیم کی اہلیت مفت چیک کریں",
+        cardStep1Title: "انٹرمیڈیٹ / ایف اے / ایف ایس سی پاس",
+        cardStep1Desc: "آپ کی 12 سالہ تعلیم براہ راست بیچلر پروگرام کے لیے منظور شدہ ہے۔",
+        cardStep2Title: "فوری آفر لیٹر اور وظائف",
+        cardStep2Desc: "بہترین کورس کا انتخاب اور بین الاقوامی سکالرشپ کی سہولت۔",
+        cardStep3Title: "سٹوڈنٹ ویزا (Subclass 500)",
+        cardStep3Desc: "تعلیم کے دوران ہر دو ہفتے میں 48 گھنٹے قانونی ملازمت کی سہولت۔",
+        labelChooseCountry: "اپنا ملک منتخب کریں:",
+        btnCardCheck: "مفت دستاویزات کی جانچ شروع کریں",
+        pillarSubhead: "دنیا کا بہترین تعلیمی مرکز",
+        pillarTitle: "آسٹریلیا کیوں؟",
+        pillarDesc: "آپ کے شاندار مستقبل اور عالمی کیریئر کے لیے بہترین انتخاب۔ عالمی معیار کی یونیورسٹیاں اور محفوظ ماحول۔",
+        feat1Title: "عالمی صنعت میں درکار مہارتیں",
+        feat1Desc: "انٹرنیشنل مارکیٹ میں سب سے زیادہ طلب رکھنے والی مہارتیں حاصل کریں۔ آئی ٹی، بزنس، میڈیکل اور انجینئرنگ کے عملی کورسز۔",
+        feat1Tag: "صنعتی معیار پر مبنی تعلیمی نصاب",
+        feat2Title: "قانونی پارٹ ٹائم ملازمت",
+        feat2Desc: "پڑھائی کے دوران ہر دو ہفتوں میں 48 گھنٹے اور چھٹیوں کے دوران لامحدود گھنٹے قانونی کام کی اجازت۔",
+        feat2Tag: "دنیا کی سب سے زیادہ کم از کم اجرت (AUD)",
+        feat3Title: "پوسٹ اسٹڈی ورک ویزا (PSW)",
+        feat3Desc: "ڈگری مکمل کرنے کے بعد آسٹریلیا میں رہ کر کل وقتی کام کرنے اور بین الاقوامی تجربہ حاصل کرنے کا بہترین موقع۔",
+        feat3Tag: "Subclass 485 ورک ویزا",
+        bannerFastBadge: "آسان اور تیز ترین راستہ",
+        bannerFastTitle: "انٹرمیڈیٹ کے بعد بغیر وقت ضائع کیے سیدھا بیچلر ڈگری",
+        bannerFastDesc: "سڈنی، میلبورن، برسبین، ایڈیلیڈ اور پرتھ کی نامور یونیورسٹیوں میں داخلہ لیں۔ سمارٹ ایکسس انٹرنیشنل آپ کے ساتھ ہے۔",
+        bannerFastBtn: "مفت رہنمائی حاصل کریں!",
+        howTitle: "Smart Access Internasional کی جامع سروسز",
+        howSubtitle: "پاکستان سے لے کر آسٹریلیا پہنچنے تک ہر قدم پر آپ کے ساتھ۔",
+        step1Title: "کیریئر اور فیلڈ کونسلنگ",
+        step1Desc: "آپ کی دلچسپی اور مارکیٹ کے تقاضوں کے مطابق کورس کا انتخاب۔",
+        step2Title: "آفر لیٹر اور سکالرشپ",
+        step2Desc: "یونیورسٹی سے باضابطہ آفر لیٹر اور وظائف کے حصول میں مدد۔",
+        step3Title: "سٹوڈنٹ ویزا پراسیسنگ",
+        step3Desc: "Genuine Student (GS) اور مالیاتی دستاویزات کی مکمل تیاری۔",
+        step4Title: "رہائش اور استقبالیہ",
+        step4Desc: "ایئرپورٹ پر استقبال، رہائش کی فراہمی اور بینک اکاؤنٹ کھولنے میں مدد۔",
+        officesSubhead: "عالمی رابطہ نیٹ ورک",
+        officesTitle: "ہر ملک میں رابطے کے لیے نمائندے اور پتے",
+        officesDesc: "ہمارے دفاتر اسلام آباد، جکارتہ، منیلا، کھٹمنڈو اور سڈنی میں آپ کی رہنمائی کے لیے ہمہ وقت تیار ہیں۔",
+        faqTitle: "اکثر پوچھے جانے والے سوالات (FAQ)",
+        faqSubtitle: "آسٹریلیا میں بیچلر تعلیم کے حوالے سے تمام ضروری معلومات۔",
+        faqQ1: "کیا پاکستانی انٹرمیڈیٹ طلباء براہِ راست بیچلر میں داخلہ لے سکتے ہیں؟",
+        faqA1: "جی بالکل! FA / FSc / ICS / I.Com پاس طلباء براہ راست 3 یا 4 سالہ بیچلر ڈگری میں داخلہ لے سکتے ہیں۔",
+        faqQ2: "طالب علم ہفتے میں کتنے گھنٹے کام کر سکتے ہیں؟",
+        faqA2: "آسٹریلوی سٹوڈنٹ ویزا کے تحت سمسٹر کے دوران 15 دنوں میں 48 گھنٹے اور تعطیلات میں فل ٹائم کام کی اجازت ہے۔",
+        faqQ3: "کیا IELTS یا PTE ضروری ہے؟",
+        faqA3: "آسٹریلیا میں IELTS اور PTE دونوں قبول کیے جاتے ہیں۔ جن کے نمبر کم ہوں ان کے لیے لینگویج کورس کا انتظام بھی کیا جاتا ہے۔",
+        faqQ4: "سمارٹ ایکسس کون سی خدمات مہیا کرتا ہے؟",
+        faqA4: "داخلے سے لے کر ویزا فائلنگ، انشورنس، سکالرشپ اور آسٹریلیا میں رہائش تک تمام سہولیات ایک ہی چھت تلے۔",
+        ctaMainTitle: "آسٹریلیا میں اعلیٰ تعلیم کا خواب اب حقیقت بنائیں",
+        ctaMainDesc: "مفت تعلیمی جائزے اور سکالرشپ کے مواقع جاننے کے لیے آج ہی ہمارے آفیشل ایڈوائزر سے رابطہ کریں۔",
+        ctaBtnFree: "ابھی مفت رابطہ کریں!"
+      }
+    };
+
+    // Current Active Language State
+    let currentLang = 'id';
+
+    // Function to Switch Languages
+    function setLanguage(langCode) {
+      if (!translations[langCode]) return;
+      currentLang = langCode;
+      const data = translations[langCode];
+
+      // Update switcher display
+      document.getElementById('current-lang-flag').textContent = data.flag;
+      document.getElementById('current-lang-text').textContent = data.name;
+
+      // Update text nodes
+      document.getElementById('intake-badge').textContent = data.intakeBadge;
+      document.getElementById('intake-text').textContent = data.intakeText;
+      document.getElementById('top-offices-btn').textContent = data.topOfficesBtn;
+
+      document.getElementById('nav-why').textContent = data.navWhy;
+      document.getElementById('nav-pathway').textContent = data.navPathway;
+      document.getElementById('nav-advantages').textContent = data.navAdvantages;
+      document.getElementById('nav-offices').textContent = data.navOffices;
+      document.getElementById('nav-faq').textContent = data.navFaq;
+      document.getElementById('header-cta-btn').querySelector('span').textContent = data.headerCta;
+
+      // Mobile Menu items
+      document.getElementById('m-nav-why').textContent = data.navWhy;
+      document.getElementById('m-nav-pathway').textContent = data.navPathway;
+      document.getElementById('m-nav-advantages').textContent = data.navAdvantages;
+      document.getElementById('m-nav-offices').textContent = data.navOffices;
+      document.getElementById('m-nav-faq').textContent = data.navFaq;
+      document.getElementById('m-cta-btn').querySelector('span').textContent = data.headerCta;
+
+      // Hero
+      document.getElementById('hero-badge').textContent = data.heroBadge;
+      document.getElementById('hero-title').innerHTML = data.heroTitle;
+      document.getElementById('hero-subtitle').innerHTML = data.heroSubtitle;
+      document.getElementById('quick-badge-1').textContent = data.quickBadge1;
+      document.getElementById('quick-badge-2').textContent = data.quickBadge2;
+      document.getElementById('quick-badge-3').textContent = data.quickBadge3;
+      document.getElementById('hero-cta-main').querySelector('span').textContent = data.heroCtaMain;
+      document.getElementById('hero-cta-secondary').querySelector('span').textContent = data.heroCtaSec;
+      document.getElementById('hero-trust-title').textContent = data.heroTrustTitle;
+      document.getElementById('hero-trust-desc').textContent = data.heroTrustDesc;
+
+      // Hero Card Preview
+      document.getElementById('card-check-title').textContent = data.cardCheckTitle;
+      document.getElementById('card-check-subtitle').textContent = data.cardCheckSubtitle;
+      document.getElementById('card-step-1-title').textContent = data.cardStep1Title;
+      document.getElementById('card-step-1-desc').textContent = data.cardStep1Desc;
+      document.getElementById('card-step-2-title').textContent = data.cardStep2Title;
+      document.getElementById('card-step-2-desc').textContent = data.cardStep2Desc;
+      document.getElementById('card-step-3-title').textContent = data.cardStep3Title;
+      document.getElementById('card-step-3-desc').textContent = data.cardStep3Desc;
+      document.getElementById('label-choose-country').textContent = data.labelChooseCountry;
+      document.getElementById('btn-card-check').textContent = data.btnCardCheck;
+
+      // Three Core Pillars (Why Australia)
+      document.getElementById('pillar-subhead').textContent = data.pillarSubhead;
+      document.getElementById('pillar-title').textContent = data.pillarTitle;
+      document.getElementById('pillar-desc').textContent = data.pillarDesc;
+
+      document.getElementById('feat-1-title').textContent = data.feat1Title;
+      document.getElementById('feat-1-desc').textContent = data.feat1Desc;
+      document.getElementById('feat-1-tag').textContent = data.feat1Tag;
+
+      document.getElementById('feat-2-title').textContent = data.feat2Title;
+      document.getElementById('feat-2-desc').textContent = data.feat2Desc;
+      document.getElementById('feat-2-tag').textContent = data.feat2Tag;
+
+      document.getElementById('feat-3-title').textContent = data.feat3Title;
+      document.getElementById('feat-3-desc').textContent = data.feat3Desc;
+      document.getElementById('feat-3-tag').textContent = data.feat3Tag;
+
+      // Banner High School Direct S1
+      document.getElementById('banner-fast-badge').textContent = data.bannerFastBadge;
+      document.getElementById('banner-fast-title').textContent = data.bannerFastTitle;
+      document.getElementById('banner-fast-desc').textContent = data.bannerFastDesc;
+      document.getElementById('banner-fast-btn').querySelector('span').textContent = data.bannerFastBtn;
+
+      // Full Support Steps
+      document.getElementById('how-we-help-title').textContent = data.howTitle;
+      document.getElementById('how-we-help-subtitle').textContent = data.howSubtitle;
+      document.getElementById('step-one-title').textContent = data.step1Title;
+      document.getElementById('step-one-desc').textContent = data.step1Desc;
+      document.getElementById('step-two-title').textContent = data.step2Title;
+      document.getElementById('step-two-desc').textContent = data.step2Desc;
+      document.getElementById('step-three-title').textContent = data.step3Title;
+      document.getElementById('step-three-desc').textContent = data.step3Desc;
+      document.getElementById('step-four-title').textContent = data.step4Title;
+      document.getElementById('step-four-desc').textContent = data.step4Desc;
+
+      // Offices Section
+      document.getElementById('offices-subhead').textContent = data.officesSubhead;
+      document.getElementById('offices-title').textContent = data.officesTitle;
+      document.getElementById('offices-desc').textContent = data.officesDesc;
+
+      // FAQ
+      document.getElementById('faq-title').textContent = data.faqTitle;
+      document.getElementById('faq-subtitle').textContent = data.faqSubtitle;
+      document.getElementById('faq-q1').textContent = data.faqQ1;
+      document.getElementById('faq-a1').textContent = data.faqA1;
+      document.getElementById('faq-q2').textContent = data.faqQ2;
+      document.getElementById('faq-a2').textContent = data.faqA2;
+      document.getElementById('faq-q3').textContent = data.faqQ3;
+      document.getElementById('faq-a3').textContent = data.faqA3;
+      document.getElementById('faq-q4').textContent = data.faqQ4;
+      document.getElementById('faq-a4').textContent = data.faqA4;
+
+      // Bottom CTA
+      document.getElementById('cta-main-title').textContent = data.ctaMainTitle;
+      document.getElementById('cta-main-desc').textContent = data.ctaMainDesc;
+      document.getElementById('cta-btn-free').querySelector('span').textContent = data.ctaBtnFree;
+
+      // RTL handling for Urdu
+      if (data.isRtl) {
+        document.body.classList.add('rtl-support');
+        document.documentElement.setAttribute('dir', 'rtl');
+        document.body.classList.add('font-urdu');
+      } else {
+        document.body.classList.remove('rtl-support');
+        document.documentElement.setAttribute('dir', 'ltr');
+        document.body.classList.remove('font-urdu');
+      }
+
+      // Close dropdown
+      closeLangDropdown();
+    }
+
+    // Toggle Dropdown Menu
+    function toggleLangDropdown() {
+      const dd = document.getElementById('lang-dropdown');
+      const arrow = document.getElementById('lang-arrow');
+      dd.classList.toggle('hidden');
+      arrow.classList.toggle('rotate-180');
+    }
+
+    function closeLangDropdown() {
+      const dd = document.getElementById('lang-dropdown');
+      const arrow = document.getElementById('lang-arrow');
+      if (dd && !dd.classList.contains('hidden')) {
+        dd.classList.add('hidden');
+        arrow.classList.remove('rotate-180');
+      }
+    }
+
+    // Close language dropdown if clicked outside
+    document.addEventListener('click', function(e) {
+      const wrapper = document.getElementById('lang-menu-wrapper');
+      if (wrapper && !wrapper.contains(e.target)) {
+        closeLangDropdown();
+      }
+    });
+
+    // Mobile Hamburger Menu Toggle
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+
+    // Filter Office by Country
+    function filterCountryOffice(countryCode) {
+      const cards = document.querySelectorAll('.office-card');
+      const tabs = document.querySelectorAll('.office-tab-btn');
+
+      tabs.forEach(tab => {
+        if (tab.getAttribute('data-target') === countryCode) {
+          tab.classList.remove('bg-slate-100', 'text-slate-700');
+          tab.classList.add('bg-slate-900', 'text-white');
+        } else {
+          tab.classList.remove('bg-slate-900', 'text-white');
+          tab.classList.add('bg-slate-100', 'text-slate-700');
+        }
+      });
+
+      cards.forEach(card => {
+        if (countryCode === 'all' || card.getAttribute('data-country') === countryCode) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    // Select Country Quick Action
+    function selectOriginCountry(country) {
+      const modalCountry = document.getElementById('modal-country');
+      if (modalCountry) {
+        modalCountry.value = country;
+        updateModalContactPrefix();
+      }
+      openConsultationModal();
+    }
+
+    // FAQ Accordion Toggle
+    function toggleFaq(index) {
+      const answer = document.getElementById(`faq-ans-${index}`);
+      const arrow = document.getElementById(`faq-arrow-${index}`);
+      
+      if (answer.classList.contains('hidden')) {
+        answer.classList.remove('hidden');
+        arrow.classList.add('rotate-180');
+      } else {
+        answer.classList.add('hidden');
+        arrow.classList.remove('rotate-180');
+      }
+    }
+
+    // Modal Operations
+    function openConsultationModal() {
+      document.getElementById('consultation-modal').classList.remove('hidden');
+    }
+
+    function closeConsultationModal() {
+      document.getElementById('consultation-modal').classList.add('hidden');
+      document.getElementById('modal-alert-box').classList.add('hidden');
+    }
+
+    // Update phone placeholder based on chosen country in modal
+    function updateModalContactPrefix() {
+      const country = document.getElementById('modal-country').value;
+      const phoneInput = document.getElementById('modal-phone');
+      if (country === 'Indonesia') phoneInput.placeholder = "Contoh: 81288994411";
+      else if (country === 'Philippines') phoneInput.placeholder = "e.g. 9178542200";
+      else if (country === 'Nepal') phoneInput.placeholder = "e.g. 9801234567";
+      else if (country === 'Pakistan') phoneInput.placeholder = "e.g. 3005544331";
+      else if (country === 'Australia') phoneInput.placeholder = "e.g. 488992110";
+    }
+
+    // Handle Form Submission with WhatsApp Redirection
+    function handleConsultationSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('modal-name').value.trim();
+      const country = document.getElementById('modal-country').value;
+      const phone = document.getElementById('modal-phone').value.trim();
+      const education = document.getElementById('modal-education').value;
+      const major = document.getElementById('modal-major').value.trim() || 'General Bachelor Degree';
+
+      // Pick corresponding WhatsApp recipient based on selected nation
+      let targetWhatsApp = "6281288994411"; // Default Indonesia
+      if (country === "Philippines") targetWhatsApp = "639178542200";
+      else if (country === "Nepal") targetWhatsApp = "9779801234567";
+      else if (country === "Pakistan") targetWhatsApp = "923005544331";
+      else if (country === "Australia") targetWhatsApp = "61488992110";
+
+      // Show in-app alert box (strictly avoiding window.alert)
+      const alertBox = document.getElementById('modal-alert-box');
+      alertBox.classList.remove('hidden');
+
+      const message = `Halo Smart Access Internasional,\nSaya ingin konsultasi kuliah S1 di Australia:\n- Nama: ${name}\n- Negara: ${country}\n- No. Kontak: ${phone}\n- Pendidikan: ${education}\n- Minat Jurusan: ${major}\nMohon informasi persyaratan dan intake terdekat.`;
+      const encodedMsg = encodeURIComponent(message);
+
+      setTimeout(() => {
+        window.open(`https://wa.me/${targetWhatsApp}?text=${encodedMsg}`, '_blank');
+        closeConsultationModal();
+      }, 1200);
+    }
+
+    // Initialize current year dynamically
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
